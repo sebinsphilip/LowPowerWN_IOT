@@ -150,17 +150,19 @@ Discarded input sections
  .text.crt0     0x0000000000000000        0x0 /usr/lib/gcc/msp430/4.6.3/mmpy-16/crt0ivtbl16.o
  .text          0x0000000000000000        0x0 app-collect.co
  .text          0x0000000000000000        0x0 obj_sky/my_collect.o
- .data          0x0000000000000000        0x8 obj_sky/my_collect.o
+ .data          0x0000000000000000        0xa obj_sky/my_collect.o
  .bss           0x0000000000000000        0x0 obj_sky/my_collect.o
- .rodata        0x0000000000000000       0xbe obj_sky/my_collect.o
+ .rodata        0x0000000000000000      0x1b6 obj_sky/my_collect.o
  .text.uc_recv  0x0000000000000000       0x1c obj_sky/my_collect.o
- .text.bc_recv  0x0000000000000000       0x4e obj_sky/my_collect.o
+ .text.bc_recv  0x0000000000000000      0x144 obj_sky/my_collect.o
  .text.my_collect_open
-                0x0000000000000000       0x4a obj_sky/my_collect.o
+                0x0000000000000000       0x76 obj_sky/my_collect.o
  .text.send_beacon
-                0x0000000000000000       0x3e obj_sky/my_collect.o
+                0x0000000000000000       0x4e obj_sky/my_collect.o
  .text.beacon_timer_cb
-                0x0000000000000000        0x2 obj_sky/my_collect.o
+                0x0000000000000000       0x32 obj_sky/my_collect.o
+ .text.beacon_forward_timer_cb
+                0x0000000000000000        0x6 obj_sky/my_collect.o
  .text.my_collect_send
                 0x0000000000000000       0x16 obj_sky/my_collect.o
  .text          0x0000000000000000        0x0 obj_sky/contiki-sky-main.o
@@ -1825,121 +1827,121 @@ LOAD /usr/lib/gcc/msp430/4.6.3/mmpy-16/libcrt0.a
 .profiler
  *(.profiler)
 
-.stab           0x0000000000000000    0x1cddc
+.stab           0x0000000000000000    0x1cf5c
  *(.stab)
  .stab          0x0000000000000000     0x13a4 app-collect.co
- .stab          0x00000000000013a4      0xd50 obj_sky/my_collect.o
-                                       0x14ac (size before relaxing)
- .stab          0x00000000000020f4      0xf18 obj_sky/contiki-sky-main.o
+ .stab          0x00000000000013a4      0xed0 obj_sky/my_collect.o
+                                       0x162c (size before relaxing)
+ .stab          0x0000000000002274      0xf18 obj_sky/contiki-sky-main.o
                                        0x17a0 (size before relaxing)
- .stab          0x000000000000300c      0x264 contiki-sky.a(contiki-sky-pla)
+ .stab          0x000000000000318c      0x264 contiki-sky.a(contiki-sky-pla)
                                         0x5b8 (size before relaxing)
- .stab          0x0000000000003270      0x468 contiki-sky.a(button-sensor.o)
+ .stab          0x00000000000033f0      0x468 contiki-sky.a(button-sensor.o)
                                         0x7d4 (size before relaxing)
- .stab          0x00000000000036d8      0x624 contiki-sky.a(ds2411.o)
+ .stab          0x0000000000003858      0x624 contiki-sky.a(ds2411.o)
                                         0xb40 (size before relaxing)
- .stab          0x0000000000003cfc      0xa38 contiki-sky.a(xmem.o)
+ .stab          0x0000000000003e7c      0xa38 contiki-sky.a(xmem.o)
                                         0xf60 (size before relaxing)
- .stab          0x0000000000004734      0x2b8 contiki-sky.a(node-id.o)
+ .stab          0x00000000000048b4      0x2b8 contiki-sky.a(node-id.o)
                                         0x4e0 (size before relaxing)
- .stab          0x00000000000049ec      0x654 contiki-sky.a(sensors.o)
+ .stab          0x0000000000004b6c      0x654 contiki-sky.a(sensors.o)
                                         0xb70 (size before relaxing)
- .stab          0x0000000000005040     0x28d4 contiki-sky.a(cc2420.o)
+ .stab          0x00000000000051c0     0x28d4 contiki-sky.a(cc2420.o)
                                        0x3030 (size before relaxing)
- .stab          0x0000000000007914      0xa68 contiki-sky.a(cc2420-arch.o)
+ .stab          0x0000000000007a94      0xa68 contiki-sky.a(cc2420-arch.o)
                                        0x13f8 (size before relaxing)
- .stab          0x000000000000837c      0x60c contiki-sky.a(uart1.o)
+ .stab          0x00000000000084fc      0x60c contiki-sky.a(uart1.o)
                                         0x960 (size before relaxing)
- .stab          0x0000000000008988      0x234 contiki-sky.a(uart1-putchar.o)
+ .stab          0x0000000000008b08      0x234 contiki-sky.a(uart1-putchar.o)
                                         0x588 (size before relaxing)
- .stab          0x0000000000008bbc      0x744 contiki-sky.a(msp430.o)
+ .stab          0x0000000000008d3c      0x744 contiki-sky.a(msp430.o)
                                         0xa98 (size before relaxing)
- .stab          0x0000000000009300      0x948 contiki-sky.a(clock.o)
+ .stab          0x0000000000009480      0x948 contiki-sky.a(clock.o)
                                         0xc9c (size before relaxing)
- .stab          0x0000000000009c48      0x5dc contiki-sky.a(leds.o)
+ .stab          0x0000000000009dc8      0x5dc contiki-sky.a(leds.o)
                                         0x828 (size before relaxing)
- .stab          0x000000000000a224      0x3a8 contiki-sky.a(leds-arch.o)
+ .stab          0x000000000000a3a4      0x3a8 contiki-sky.a(leds-arch.o)
                                         0x6fc (size before relaxing)
- .stab          0x000000000000a5cc      0x3fc contiki-sky.a(watchdog.o)
+ .stab          0x000000000000a74c      0x3fc contiki-sky.a(watchdog.o)
                                         0x750 (size before relaxing)
- .stab          0x000000000000a9c8      0x3cc contiki-sky.a(rtimer-arch.o)
+ .stab          0x000000000000ab48      0x3cc contiki-sky.a(rtimer-arch.o)
                                         0x720 (size before relaxing)
- .stab          0x000000000000ad94      0x294 contiki-sky.a(autostart.o)
+ .stab          0x000000000000af14      0x294 contiki-sky.a(autostart.o)
                                         0x534 (size before relaxing)
- .stab          0x000000000000b028      0x474 contiki-sky.a(energest.o)
+ .stab          0x000000000000b1a8      0x474 contiki-sky.a(energest.o)
                                         0x6fc (size before relaxing)
- .stab          0x000000000000b49c      0xabc contiki-sky.a(etimer.o)
+ .stab          0x000000000000b61c      0xabc contiki-sky.a(etimer.o)
                                         0xd8c (size before relaxing)
- .stab          0x000000000000bf58      0x858 contiki-sky.a(ctimer.o)
+ .stab          0x000000000000c0d8      0x858 contiki-sky.a(ctimer.o)
                                         0xbc4 (size before relaxing)
- .stab          0x000000000000c7b0      0xba0 contiki-sky.a(process.o)
+ .stab          0x000000000000c930      0xba0 contiki-sky.a(process.o)
                                        0x1038 (size before relaxing)
- .stab          0x000000000000d350      0x3d8 contiki-sky.a(rtimer.o)
+ .stab          0x000000000000d4d0      0x3d8 contiki-sky.a(rtimer.o)
                                         0x6c0 (size before relaxing)
- .stab          0x000000000000d728      0x354 contiki-sky.a(timer.o)
+ .stab          0x000000000000d8a8      0x354 contiki-sky.a(timer.o)
                                         0x594 (size before relaxing)
- .stab          0x000000000000da7c      0x534 contiki-sky.a(serial-line.o)
+ .stab          0x000000000000dbfc      0x534 contiki-sky.a(serial-line.o)
                                         0xa50 (size before relaxing)
- .stab          0x000000000000dfb0      0x7f8 contiki-sky.a(list.o)
+ .stab          0x000000000000e130      0x7f8 contiki-sky.a(list.o)
                                         0x804 (size before relaxing)
- .stab          0x000000000000e7a8      0x24c contiki-sky.a(random.o)
+ .stab          0x000000000000e928      0x24c contiki-sky.a(random.o)
                                         0x624 (size before relaxing)
- .stab          0x000000000000e9f4      0x3fc contiki-sky.a(ringbuf.o)
+ .stab          0x000000000000eb74      0x3fc contiki-sky.a(ringbuf.o)
                                         0x63c (size before relaxing)
- .stab          0x000000000000edf0      0x8e8 contiki-sky.a(rime.o)
+ .stab          0x000000000000ef70      0x8e8 contiki-sky.a(rime.o)
                                        0x1410 (size before relaxing)
- .stab          0x000000000000f6d8      0x948 contiki-sky.a(broadcast-annou)
+ .stab          0x000000000000f858      0x948 contiki-sky.a(broadcast-annou)
                                        0x15c0 (size before relaxing)
- .stab          0x0000000000010020      0x66c contiki-sky.a(abc.o)
+ .stab          0x00000000000101a0      0x66c contiki-sky.a(abc.o)
                                        0x1494 (size before relaxing)
- .stab          0x000000000001068c      0x6e4 contiki-sky.a(announcement.o)
+ .stab          0x000000000001080c      0x6e4 contiki-sky.a(announcement.o)
                                         0x984 (size before relaxing)
- .stab          0x0000000000010d70      0x6d8 contiki-sky.a(broadcast.o)
+ .stab          0x0000000000010ef0      0x6d8 contiki-sky.a(broadcast.o)
                                        0x1500 (size before relaxing)
- .stab          0x0000000000011448      0x5e8 contiki-sky.a(chameleon.o)
+ .stab          0x00000000000115c8      0x5e8 contiki-sky.a(chameleon.o)
                                        0x123c (size before relaxing)
- .stab          0x0000000000011a30      0x624 contiki-sky.a(channel.o)
+ .stab          0x0000000000011bb0      0x624 contiki-sky.a(channel.o)
                                        0x129c (size before relaxing)
- .stab          0x0000000000012054     0x1f74 contiki-sky.a(collect.o)
+ .stab          0x00000000000121d4     0x1f74 contiki-sky.a(collect.o)
                                        0x2c7c (size before relaxing)
- .stab          0x0000000000013fc8      0x624 contiki-sky.a(unicast.o)
+ .stab          0x0000000000014148      0x624 contiki-sky.a(unicast.o)
                                        0x129c (size before relaxing)
- .stab          0x00000000000145ec      0x5e8 contiki-sky.a(collect-link-es)
+ .stab          0x000000000001476c      0x5e8 contiki-sky.a(collect-link-es)
                                        0x1014 (size before relaxing)
- .stab          0x0000000000014bd4      0xcf0 contiki-sky.a(csma.o)
+ .stab          0x0000000000014d54      0xcf0 contiki-sky.a(csma.o)
                                        0x1680 (size before relaxing)
- .stab          0x00000000000158c4      0x708 contiki-sky.a(nullrdc.o)
+ .stab          0x0000000000015a44      0x708 contiki-sky.a(nullrdc.o)
                                        0x1050 (size before relaxing)
- .stab          0x0000000000015fcc      0xa5c contiki-sky.a(queuebuf.o)
+ .stab          0x000000000001614c      0xa5c contiki-sky.a(queuebuf.o)
                                        0x1884 (size before relaxing)
- .stab          0x0000000000016a28      0xc60 contiki-sky.a(packetbuf.o)
+ .stab          0x0000000000016ba8      0xc60 contiki-sky.a(packetbuf.o)
                                        0x1aa0 (size before relaxing)
- .stab          0x0000000000017688      0x2c4 contiki-sky.a(linkaddr.o)
+ .stab          0x0000000000017808      0x2c4 contiki-sky.a(linkaddr.o)
                                         0x6c0 (size before relaxing)
- .stab          0x000000000001794c      0x81c contiki-sky.a(contikimac-fram)
+ .stab          0x0000000000017acc      0x81c contiki-sky.a(contikimac-fram)
                                         0xe58 (size before relaxing)
- .stab          0x0000000000018168      0x3c0 contiki-sky.a(nullsec.o)
+ .stab          0x00000000000182e8      0x3c0 contiki-sky.a(nullsec.o)
                                         0xcf0 (size before relaxing)
- .stab          0x0000000000018528      0x204 contiki-sky.a(spi.o)
+ .stab          0x00000000000186a8      0x204 contiki-sky.a(spi.o)
                                         0x42c (size before relaxing)
- .stab          0x000000000001872c      0x5c4 contiki-sky.a(memb.o)
+ .stab          0x00000000000188ac      0x5c4 contiki-sky.a(memb.o)
                                         0xaf8 (size before relaxing)
- .stab          0x0000000000018cf0      0xd80 contiki-sky.a(chameleon-bitop)
+ .stab          0x0000000000018e70      0xd80 contiki-sky.a(chameleon-bitop)
                                        0x19f8 (size before relaxing)
- .stab          0x0000000000019a70      0x8ac contiki-sky.a(packetqueue.o)
+ .stab          0x0000000000019bf0      0x8ac contiki-sky.a(packetqueue.o)
                                         0xf84 (size before relaxing)
- .stab          0x000000000001a31c      0xffc contiki-sky.a(collect-neighbo)
+ .stab          0x000000000001a49c      0xffc contiki-sky.a(collect-neighbo)
                                        0x1a64 (size before relaxing)
- .stab          0x000000000001b318      0x1f8 contiki-sky.a(mac.o)
+ .stab          0x000000000001b498      0x1f8 contiki-sky.a(mac.o)
                                         0x4ec (size before relaxing)
- .stab          0x000000000001b510      0x6f0 contiki-sky.a(framer-802154.o)
+ .stab          0x000000000001b690      0x6f0 contiki-sky.a(framer-802154.o)
                                         0xf30 (size before relaxing)
- .stab          0x000000000001bc00     0x11dc contiki-sky.a(frame802154.o)
+ .stab          0x000000000001bd80     0x11dc contiki-sky.a(frame802154.o)
                                        0x19c8 (size before relaxing)
 
-.stabstr        0x0000000000000000    0x1719d
+.stabstr        0x0000000000000000    0x171da
  *(.stabstr)
- .stabstr       0x0000000000000000    0x1719d app-collect.co
+ .stabstr       0x0000000000000000    0x171da app-collect.co
 
 .stab.excl
  *(.stab.excl)

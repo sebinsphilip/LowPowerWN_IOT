@@ -20,7 +20,7 @@ struct my_collect_conn {
   linkaddr_t parent;
   struct ctimer beacon_timer;
   uint16_t metric;
-  uint16_t beacon_seqn;
+  uint16_t beacon_seqn : 3;
 };
 /*---------------------------------------------------------------------------*/
 /* Initialize a collect connection 
