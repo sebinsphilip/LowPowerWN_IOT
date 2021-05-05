@@ -8,8 +8,8 @@
 #include "core/net/linkaddr.h"
 #include "my_collect.h"
 /*---------------------------------------------------------------------------*/
-//#define BEACON_INTERVAL (CLOCK_SECOND * 60)
-#define BEACON_INTERVAL (CLOCK_SECOND * 5)
+#define BEACON_INTERVAL (CLOCK_SECOND * 60)
+//#define BEACON_INTERVAL (CLOCK_SECOND * 5)
 #define BEACON_FORWARD_DELAY (random_rand() % CLOCK_SECOND)
 /*---------------------------------------------------------------------------*/
 #define RSSI_THRESHOLD -95
@@ -207,6 +207,16 @@ my_collect_send(struct my_collect_conn *conn)
    * 2. Insert the header in the packet buffer
    * 3. Send the packet to the parent using unicast
    */
+ 
+  ret = packetbuf_hdralloc (sizeof(struct collect_header));
+  if (!ret)
+  {
+    printf ("Error in allocating packet collect header! returning..\n");
+    return ret;
+  }
+  memcpy(packetbuf_hdrptr(), &hdr, sizeof(struct collect_header));
+  ret = unicast_send (&conn->uc, &conn->parent);
+  return ret;
 }
 /*---------------------------------------------------------------------------*/
 /* Data receive callback */
@@ -229,6 +239,22 @@ uc_recv(struct unicast_conn *uc_conn, const linkaddr_t *from)
    * 2. On the sink, remove the header and call the application callback
    * 3. On a router, update the header and forward the packet to the parent using unicast
    */
+  memcpy(&hdr, packetbuf_dataptr(), sizeof(struct collect_header));
+  printf ("my_collect source|%02x:%02x hop|%d\n", hdr.source.u8[0],
+                   hdr.source.u8[1], hdr.hops);
+ 
+  if (linkaddr_cmp (&sink_node, &linkaddr_node_addr))
+  {
+    //printf ("Here at the sink node!!\n");
+    packetbuf_hdrreduce (sizeof(struct collect_header));
+    conn->callbacks->recv (&hdr.source, hdr.hops);
+  }
+  else
+  {
+    hdr.hops += 1;
+    memcpy(packetbuf_dataptr(), &hdr, sizeof(struct collect_header));
+    unicast_send (&conn->uc, &conn->parent);
+  }
 }
 /*---------------------------------------------------------------------------*/
 

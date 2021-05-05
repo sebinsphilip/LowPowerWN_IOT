@@ -7,8 +7,8 @@
 #include "core/net/linkaddr.h"
 #include "my_collect.h"
 /*---------------------------------------------------------------------------*/
-//#define MSG_PERIOD (30 * CLOCK_SECOND) /* Send a packet every 30 seconds */
-#define MSG_PERIOD (3 * CLOCK_SECOND)
+#define MSG_PERIOD (30 * CLOCK_SECOND) /* Send a packet every 30 seconds */
+//#define MSG_PERIOD (3 * CLOCK_SECOND)
 #define COLLECT_CHANNEL 0xAA
 /*---------------------------------------------------------------------------*/
 #ifndef CONTIKI_TARGET_SKY
