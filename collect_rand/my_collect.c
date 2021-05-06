@@ -54,7 +54,8 @@ my_collect_open(struct my_collect_conn* conn, uint16_t channels,
    * 1. Make the sink send beacons periodically (BEACON_INTERVAL)
    */
   if(is_sink)
-    ctimer_set(&conn->beacon_timer, BEACON_INTERVAL, beacon_timer_cb, (void*)conn);
+    //ctimer_set(&conn->beacon_timer, BEACON_INTERVAL, beacon_timer_cb, (void*)conn);
+    ctimer_set(&conn->beacon_timer, CLOCK_SECOND* 5, beacon_timer_cb, (void*)conn);
 }
 /*---------------------------------------------------------------------------*/
 /*                              Beacon Handling                              */
@@ -97,7 +98,8 @@ beacon_timer_cb(void* ptr)
   conn->metric = 0; // metric always 0 for sink
   send_beacon (conn);
   conn->beacon_seqn++;
-  ctimer_reset(&conn->beacon_timer);
+  //ctimer_reset(&conn->beacon_timer);
+  ctimer_set(&conn->beacon_timer, BEACON_INTERVAL, beacon_timer_cb, (void*)conn);
 }
 /*---------------------------------------------------------------------------*/
 /* Beacon receive callback */
@@ -218,6 +220,7 @@ my_collect_send(struct my_collect_conn *conn)
   ret = unicast_send (&conn->uc, &conn->parent);
   return ret;
 }
+
 /*---------------------------------------------------------------------------*/
 /* Data receive callback */
 void
