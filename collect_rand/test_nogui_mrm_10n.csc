@@ -20,7 +20,7 @@
       org.contikios.cooja.mspmote.SkyMoteType
       <identifier>sky1</identifier>
       <description>Sky Mote Type #sky1</description>
-      <firmware EXPORT="copy">[CONFIG_DIR]/app.sky</firmware>
+      <firmware EXPORT="copy">[CONFIG_DIR]/app-collect.sky</firmware>
       <moteinterface>org.contikios.cooja.interfaces.Position</moteinterface>
       <moteinterface>org.contikios.cooja.interfaces.RimeAddress</moteinterface>
       <moteinterface>org.contikios.cooja.interfaces.IPAddress</moteinterface>
@@ -284,6 +284,7 @@
     <plugin_config>
       <script>SIM_SETTLING_TIME = 1000
         TIMEOUT(1800000);
+        //TIMEOUT(1800);
         try {
           load("nashorn:mozilla_compat.js");
         } catch(err) {}

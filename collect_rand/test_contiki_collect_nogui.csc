@@ -298,11 +298,21 @@
     <location_x>686</location_x>
     <location_y>1</location_y>
   </plugin>
+<plugin>
+    PowerTracker
+    <width>400</width>
+    <z>-1</z>
+    <height>155</height>
+    <location_x>132</location_x>
+    <location_y>152</location_y>
+    <minimized>true</minimized>
+  </plugin>
   <plugin>
     org.contikios.cooja.plugins.ScriptRunner
     <plugin_config>
       <script>
         TIMEOUT(1800000);
+        //TIMEOUT(1800);
         try {
           load("nashorn:mozilla_compat.js");
         } catch(err) {}
@@ -310,24 +320,42 @@
         //import Java Package to JavaScript
         importPackage(java.io);
 
-        // Use JavaScript object as an associative array
-        outputs = new FileWriter("test.log");
+ importPackage(java.util);
 
-        while (true) {
-          //Write to file.
-          outputs.write(time + "\tID:" + id + "\t" + msg + "\n");
+        allm = sim.getMotes();
+        nmotes = allm.length;
+
+        ptplugin = sim.getCooja().getStartedPlugin("PowerTracker");
+        ptplugin.reset();
+
+
+        // Use JavaScript object as an associative array
+        outputs = new FileWriter("test_contiki_collect_newSeb.log");
+dcoutputs = new FileWriter("test_contiki_collect_newSeb_dc.log");
+       while (true) {
+          if(msg.equals("Simulation Settling Time")) {
+            ptplugin.reset();
+          } else {
+            //Write to file.
+            outputs.write(time + "\tID:" + id + "\t" + msg + "\n");
+          }
 
           try{
             //This is the tricky part. The Script is terminated using
             // an exception. This needs to be caught.
               YIELD();
           } catch (e) {
+            // Get the PowerTracker Stats
+            stats = ptplugin.radioStatistics();
+            dcoutputs.write(stats + "\n");
+
             //Close files.
             outputs.close();
+            dcoutputs.close();
+
             //Rethrow exception again, to end the script.
             throw('test script killed');
-          }
-        }
+          }}
       </script>
       <active>true</active>
     </plugin_config>

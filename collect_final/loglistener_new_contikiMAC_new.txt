@@ -1,0 +1,1656 @@
+00:00.331	ID:8	Rime started with address 8.0
+00:00.341	ID:8	MAC 08:00:00:00:00:00:00:00 Contiki-3.x-3345-g32b5b17 started. Node id is set to 8.
+00:00.350	ID:8	nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+00:00.351	ID:8	Starting 'App process'
+00:00.354	ID:8	App: I am normal node 08:00
+00:00.495	ID:2	Rime started with address 2.0
+00:00.504	ID:2	MAC 02:00:00:00:00:00:00:00 Contiki-3.x-3345-g32b5b17 started. Node id is set to 2.
+00:00.509	ID:6	Rime started with address 6.0
+00:00.513	ID:2	nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+00:00.515	ID:2	Starting 'App process'
+00:00.517	ID:2	App: I am normal node 02:00
+00:00.519	ID:6	MAC 06:00:00:00:00:00:00:00 Contiki-3.x-3345-g32b5b17 started. Node id is set to 6.
+00:00.528	ID:6	nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+00:00.529	ID:6	Starting 'App process'
+00:00.531	ID:6	App: I am normal node 06:00
+00:00.607	ID:4	Rime started with address 4.0
+00:00.616	ID:4	MAC 04:00:00:00:00:00:00:00 Contiki-3.x-3345-g32b5b17 started. Node id is set to 4.
+00:00.625	ID:4	nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+00:00.627	ID:4	Starting 'App process'
+00:00.629	ID:4	App: I am normal node 04:00
+00:00.641	ID:1	Rime started with address 1.0
+00:00.650	ID:1	MAC 01:00:00:00:00:00:00:00 Contiki-3.x-3345-g32b5b17 started. Node id is set to 1.
+00:00.659	ID:1	nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+00:00.660	ID:7	Rime started with address 7.0
+00:00.661	ID:1	Starting 'App process'
+00:00.663	ID:1	App: I am sink 01:00
+00:00.670	ID:7	MAC 07:00:00:00:00:00:00:00 Contiki-3.x-3345-g32b5b17 started. Node id is set to 7.
+00:00.679	ID:7	nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+00:00.680	ID:7	Starting 'App process'
+00:00.683	ID:7	App: I am normal node 07:00
+00:00.815	ID:10	Rime started with address 10.0
+00:00.825	ID:10	MAC 0a:00:00:00:00:00:00:00 Contiki-3.x-3345-g32b5b17 started. Node id is set to 10.
+00:00.834	ID:10	nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+00:00.835	ID:10	Starting 'App process'
+00:00.838	ID:10	App: I am normal node 0a:00
+00:00.967	ID:9	Rime started with address 9.0
+00:00.974	ID:5	Rime started with address 5.0
+00:00.976	ID:9	MAC 09:00:00:00:00:00:00:00 Contiki-3.x-3345-g32b5b17 started. Node id is set to 9.
+00:00.983	ID:5	MAC 05:00:00:00:00:00:00:00 Contiki-3.x-3345-g32b5b17 started. Node id is set to 5.
+00:00.986	ID:9	nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+00:00.987	ID:9	Starting 'App process'
+00:00.989	ID:9	App: I am normal node 09:00
+00:00.992	ID:5	nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+00:00.994	ID:5	Starting 'App process'
+00:00.996	ID:5	App: I am normal node 05:00
+00:01.158	ID:3	Rime started with address 3.0
+00:01.167	ID:3	MAC 03:00:00:00:00:00:00:00 Contiki-3.x-3345-g32b5b17 started. Node id is set to 3.
+00:01.176	ID:3	nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+00:01.178	ID:3	Starting 'App process'
+00:01.180	ID:3	App: I am normal node 03:00
+00:05.663	ID:1	my_collect: sending beacon: seqn 1 metric 0
+00:05.745	ID:5	my_collect: recv beacon from 01:00 seqn 1 metric 0 rssi -74
+00:05.750	ID:5	Metric number flush happened!, new parent selection (01:00 metric 0 )
+00:05.767	ID:2	my_collect: recv beacon from 01:00 seqn 1 metric 0 rssi -63
+00:05.772	ID:2	Metric number flush happened!, new parent selection (01:00 metric 0 )
+00:05.780	ID:6	my_collect: recv beacon from 01:00 seqn 1 metric 0 rssi -44
+00:05.785	ID:6	Metric number flush happened!, new parent selection (01:00 metric 0 )
+00:05.808	ID:7	my_collect: recv beacon from 01:00 seqn 1 metric 0 rssi -39
+00:05.813	ID:7	Metric number flush happened!, new parent selection (01:00 metric 0 )
+00:05.923	ID:2	my_collect: sending beacon: seqn 1 metric 1
+00:05.994	ID:5	my_collect: recv beacon from 02:00 seqn 1 metric 1 rssi -23
+00:06.000	ID:5	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+00:06.030	ID:6	my_collect: recv beacon from 02:00 seqn 1 metric 1 rssi -81
+00:06.035	ID:6	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+00:06.057	ID:7	my_collect: recv beacon from 02:00 seqn 1 metric 1 rssi -73
+00:06.063	ID:7	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+00:06.221	ID:7	my_collect: sending beacon: seqn 1 metric 1
+00:06.246	ID:5	my_collect: recv beacon from 07:00 seqn 1 metric 1 rssi -80
+00:06.251	ID:5	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+00:06.265	ID:2	my_collect: recv beacon from 07:00 seqn 1 metric 1 rssi -73
+00:06.270	ID:2	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+00:06.281	ID:6	my_collect: recv beacon from 07:00 seqn 1 metric 1 rssi -73
+00:06.287	ID:6	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+00:06.336	ID:10	my_collect: recv beacon from 07:00 seqn 1 metric 1 rssi -80
+00:06.341	ID:10	Metric number flush happened!, new parent selection (07:00 metric 1 )
+00:06.344	ID:6	my_collect: sending beacon: seqn 1 metric 1
+00:06.391	ID:2	my_collect: recv beacon from 06:00 seqn 1 metric 1 rssi -81
+00:06.397	ID:2	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+00:06.432	ID:7	my_collect: recv beacon from 06:00 seqn 1 metric 1 rssi -73
+00:06.438	ID:7	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+00:06.456	ID:5	my_collect: sending beacon: seqn 1 metric 1
+00:06.516	ID:2	my_collect: recv beacon from 05:00 seqn 1 metric 1 rssi -23
+00:06.522	ID:2	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+00:06.557	ID:7	my_collect: recv beacon from 05:00 seqn 1 metric 1 rssi -80
+00:06.563	ID:7	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+00:07.306	ID:10	my_collect: sending beacon: seqn 1 metric 2
+00:07.363	ID:9	my_collect: recv beacon from 0a:00 seqn 1 metric 2 rssi -82
+00:07.368	ID:9	Metric number flush happened!, new parent selection (0a:00 metric 2 )
+00:07.429	ID:3	my_collect: recv beacon from 0a:00 seqn 1 metric 2 rssi -55
+00:07.431	ID:7	my_collect: recv beacon from 0a:00 seqn 1 metric 2 rssi -80
+00:07.434	ID:3	Metric number flush happened!, new parent selection (0a:00 metric 2 )
+00:07.437	ID:7	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+00:07.438	ID:3	my_collect: sending beacon: seqn 1 metric 3
+00:07.482	ID:9	my_collect: sending beacon: seqn 1 metric 3
+00:07.553	ID:3	my_collect: recv beacon from 09:00 seqn 1 metric 3 rssi -42
+00:07.559	ID:3	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+00:07.586	ID:10	my_collect: recv beacon from 09:00 seqn 1 metric 3 rssi -82
+00:07.591	ID:10	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+00:07.602	ID:8	my_collect: recv beacon from 09:00 seqn 1 metric 3 rssi -62
+00:07.607	ID:8	Metric number flush happened!, new parent selection (09:00 metric 3 )
+00:07.836	ID:10	my_collect: recv beacon from 03:00 seqn 1 metric 3 rssi -55
+00:07.842	ID:10	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+00:07.852	ID:8	my_collect: recv beacon from 03:00 seqn 1 metric 3 rssi -79
+00:07.858	ID:8	SAME METRIC DIFFERENT PARENT ALERT!! nothing happened! (03:00 metric 3 )
+00:07.863	ID:9	my_collect: recv beacon from 03:00 seqn 1 metric 3 rssi -42
+00:07.869	ID:8	my_collect: sending beacon: seqn 1 metric 4
+00:07.869	ID:9	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+00:08.178	ID:3	my_collect: recv beacon from 08:00 seqn 1 metric 4 rssi -79
+00:08.184	ID:3	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+00:08.238	ID:9	my_collect: recv beacon from 08:00 seqn 1 metric 4 rssi -62
+00:08.244	ID:9	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+00:32.478	ID:4	App: Send seqn 0
+00:34.001	ID:5	App: Send seqn 0
+00:34.033	ID:1	my_collect source|05:00 hop|0
+00:34.036	ID:1	App: Recv from 05:00 seqn 0 hops 0
+00:35.992	ID:8	App: Send seqn 0
+00:36.110	ID:9	my_collect source|08:00 hop|0
+00:36.207	ID:10	my_collect source|08:00 hop|1
+00:36.304	ID:7	my_collect source|08:00 hop|2
+00:36.409	ID:1	my_collect source|08:00 hop|3
+00:36.411	ID:1	App: Recv from 08:00 seqn 0 hops 3
+00:38.124	ID:2	App: Send seqn 0
+00:38.159	ID:1	my_collect source|02:00 hop|0
+00:38.162	ID:1	App: Recv from 02:00 seqn 0 hops 0
+00:38.507	ID:10	App: Send seqn 0
+00:38.554	ID:7	my_collect source|0a:00 hop|0
+00:38.658	ID:1	my_collect source|0a:00 hop|1
+00:38.661	ID:1	App: Recv from 0a:00 seqn 0 hops 1
+00:40.302	ID:6	App: Send seqn 0
+00:40.409	ID:1	my_collect source|06:00 hop|0
+00:40.412	ID:1	App: Recv from 06:00 seqn 0 hops 0
+00:41.526	ID:9	App: Send seqn 0
+00:41.582	ID:10	my_collect source|09:00 hop|0
+00:41.679	ID:7	my_collect source|09:00 hop|1
+00:41.783	ID:1	my_collect source|09:00 hop|2
+00:41.786	ID:1	App: Recv from 09:00 seqn 0 hops 2
+00:44.092	ID:3	App: Send seqn 0
+00:44.208	ID:10	my_collect source|03:00 hop|0
+00:44.302	ID:7	my_collect source|03:00 hop|1
+00:44.409	ID:1	my_collect source|03:00 hop|2
+00:44.411	ID:1	App: Recv from 03:00 seqn 0 hops 2
+00:44.953	ID:7	App: Send seqn 0
+00:45.034	ID:1	my_collect source|07:00 hop|0
+00:45.036	ID:1	App: Recv from 07:00 seqn 0 hops 0
+01:01.290	ID:5	App: Send seqn 1
+01:01.406	ID:1	my_collect source|05:00 hop|0
+01:01.409	ID:1	App: Recv from 05:00 seqn 1 hops 0
+01:01.514	ID:10	App: Send seqn 1
+01:01.554	ID:7	my_collect source|0a:00 hop|0
+01:01.659	ID:1	my_collect source|0a:00 hop|1
+01:01.661	ID:1	App: Recv from 0a:00 seqn 1 hops 1
+01:01.892	ID:4	App: Send seqn 1
+01:04.382	ID:2	App: Send seqn 1
+01:04.408	ID:1	my_collect source|02:00 hop|0
+01:04.410	ID:1	App: Recv from 02:00 seqn 1 hops 0
+01:04.930	ID:7	App: Send seqn 1
+01:05.034	ID:1	my_collect source|07:00 hop|0
+01:05.037	ID:1	App: Recv from 07:00 seqn 1 hops 0
+01:05.256	ID:3	App: Send seqn 1
+01:05.334	ID:10	my_collect source|03:00 hop|0
+01:05.428	ID:7	my_collect source|03:00 hop|1
+01:05.532	ID:1	my_collect source|03:00 hop|2
+01:05.535	ID:1	App: Recv from 03:00 seqn 1 hops 2
+01:05.663	ID:1	my_collect: sending beacon: seqn 2 metric 0
+01:05.744	ID:5	my_collect: recv beacon from 01:00 seqn 2 metric 0 rssi -74
+01:05.746	ID:5	Sequence number flush happened! 
+01:05.766	ID:2	my_collect: recv beacon from 01:00 seqn 2 metric 0 rssi -63
+01:05.768	ID:2	Sequence number flush happened! 
+01:05.779	ID:6	my_collect: recv beacon from 01:00 seqn 2 metric 0 rssi -44
+01:05.782	ID:6	Sequence number flush happened! 
+01:05.807	ID:7	my_collect: recv beacon from 01:00 seqn 2 metric 0 rssi -39
+01:05.810	ID:7	Sequence number flush happened! 
+01:05.976	ID:6	my_collect: sending beacon: seqn 2 metric 1
+01:06.003	ID:4	my_collect: recv beacon from 06:00 seqn 2 metric 1 rssi -62
+01:06.006	ID:4	Sequence number flush happened! 
+01:06.016	ID:2	my_collect: recv beacon from 06:00 seqn 2 metric 1 rssi -81
+01:06.022	ID:2	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+01:06.055	ID:7	my_collect: recv beacon from 06:00 seqn 2 metric 1 rssi -73
+01:06.061	ID:7	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+01:06.402	ID:4	my_collect: sending beacon: seqn 2 metric 2
+01:06.502	ID:7	my_collect: sending beacon: seqn 2 metric 1
+01:06.550	ID:5	my_collect: sending beacon: seqn 2 metric 1
+01:06.586	ID:10	my_collect: recv beacon from 07:00 seqn 2 metric 1 rssi -80
+01:06.588	ID:10	Sequence number flush happened! 
+01:06.619	ID:5	my_collect: recv beacon from 07:00 seqn 2 metric 1 rssi -80
+01:06.625	ID:5	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+01:06.641	ID:2	my_collect: recv beacon from 07:00 seqn 2 metric 1 rssi -73
+01:06.647	ID:2	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+01:06.735	ID:2	my_collect: sending beacon: seqn 2 metric 1
+01:06.781	ID:6	my_collect: recv beacon from 02:00 seqn 2 metric 1 rssi -81
+01:06.787	ID:6	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+01:06.806	ID:7	my_collect: recv beacon from 02:00 seqn 2 metric 1 rssi -73
+01:06.812	ID:7	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+01:06.869	ID:5	my_collect: recv beacon from 02:00 seqn 2 metric 1 rssi -23
+01:06.875	ID:5	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+01:07.014	ID:2	my_collect: recv beacon from 05:00 seqn 2 metric 1 rssi -23
+01:07.020	ID:2	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+01:07.055	ID:7	my_collect: recv beacon from 05:00 seqn 2 metric 1 rssi -80
+01:07.061	ID:7	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+01:07.118	ID:10	my_collect: sending beacon: seqn 2 metric 2
+01:07.178	ID:3	my_collect: recv beacon from 0a:00 seqn 2 metric 2 rssi -55
+01:07.180	ID:3	Sequence number flush happened! 
+01:07.180	ID:7	my_collect: recv beacon from 0a:00 seqn 2 metric 2 rssi -80
+01:07.186	ID:7	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+01:07.190	ID:9	App: Send seqn 1
+01:07.238	ID:9	my_collect: recv beacon from 0a:00 seqn 2 metric 2 rssi -82
+01:07.240	ID:9	Sequence number flush happened! 
+01:07.334	ID:10	my_collect source|09:00 hop|0
+01:07.426	ID:7	my_collect source|09:00 hop|1
+01:07.532	ID:1	my_collect source|09:00 hop|2
+01:07.535	ID:1	App: Recv from 09:00 seqn 1 hops 2
+01:07.551	ID:9	my_collect: sending beacon: seqn 2 metric 3
+01:07.583	ID:10	my_collect: recv beacon from 09:00 seqn 2 metric 3 rssi -82
+01:07.589	ID:10	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+01:07.602	ID:8	my_collect: recv beacon from 09:00 seqn 2 metric 3 rssi -62
+01:07.605	ID:8	Sequence number flush happened! 
+01:07.624	ID:8	App: Send seqn 1
+01:07.679	ID:3	my_collect: recv beacon from 09:00 seqn 2 metric 3 rssi -42
+01:07.685	ID:3	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+01:07.734	ID:9	my_collect source|08:00 hop|0
+01:07.833	ID:10	my_collect source|08:00 hop|1
+01:07.853	ID:8	my_collect: sending beacon: seqn 2 metric 4
+01:07.986	ID:9	my_collect: recv beacon from 08:00 seqn 2 metric 4 rssi -62
+01:07.992	ID:9	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+01:08.053	ID:7	my_collect source|08:00 hop|2
+01:08.140	ID:3	my_collect: sending beacon: seqn 2 metric 3
+01:08.407	ID:1	my_collect source|08:00 hop|3
+01:08.410	ID:1	App: Recv from 08:00 seqn 1 hops 3
+01:14.279	ID:6	App: Send seqn 1
+01:14.410	ID:1	my_collect source|06:00 hop|0
+01:14.412	ID:1	App: Recv from 06:00 seqn 1 hops 0
+01:33.365	ID:3	App: Send seqn 2
+01:33.384	ID:5	App: Send seqn 2
+01:33.553	ID:2	App: Send seqn 2
+01:33.785	ID:1	my_collect source|02:00 hop|0
+01:33.788	ID:1	App: Recv from 02:00 seqn 2 hops 0
+01:33.833	ID:10	my_collect source|03:00 hop|0
+01:34.053	ID:7	my_collect source|03:00 hop|1
+01:34.159	ID:1	my_collect source|05:00 hop|0
+01:34.162	ID:1	App: Recv from 05:00 seqn 2 hops 0
+01:34.283	ID:1	my_collect source|03:00 hop|2
+01:34.286	ID:1	App: Recv from 03:00 seqn 2 hops 2
+01:35.263	ID:6	App: Send seqn 2
+01:35.284	ID:1	my_collect source|06:00 hop|0
+01:35.287	ID:1	App: Recv from 06:00 seqn 2 hops 0
+01:35.494	ID:9	App: Send seqn 2
+01:35.582	ID:10	my_collect source|09:00 hop|0
+01:35.586	ID:8	App: Send seqn 2
+01:36.915	ID:7	App: Send seqn 2
+01:37.033	ID:1	my_collect source|07:00 hop|0
+01:37.036	ID:1	App: Recv from 07:00 seqn 2 hops 0
+01:38.186	ID:10	App: Send seqn 2
+01:38.302	ID:7	my_collect source|0a:00 hop|0
+01:38.409	ID:1	my_collect source|0a:00 hop|1
+01:38.411	ID:1	App: Recv from 0a:00 seqn 2 hops 1
+01:39.486	ID:4	App: Send seqn 2
+01:39.527	ID:6	my_collect source|04:00 hop|0
+01:39.659	ID:1	my_collect source|04:00 hop|1
+01:39.662	ID:1	App: Recv from 04:00 seqn 2 hops 1
+02:01.022	ID:6	App: Send seqn 3
+02:01.159	ID:1	my_collect source|06:00 hop|0
+02:01.162	ID:1	App: Recv from 06:00 seqn 3 hops 0
+02:01.274	ID:7	App: Send seqn 3
+02:01.409	ID:1	my_collect source|07:00 hop|0
+02:01.412	ID:1	App: Recv from 07:00 seqn 3 hops 0
+02:01.784	ID:9	App: Send seqn 3
+02:01.833	ID:10	my_collect source|09:00 hop|0
+02:01.928	ID:7	my_collect source|09:00 hop|1
+02:02.034	ID:1	my_collect source|09:00 hop|2
+02:02.037	ID:1	App: Recv from 09:00 seqn 3 hops 2
+02:02.344	ID:8	App: Send seqn 3
+02:02.484	ID:9	my_collect source|08:00 hop|0
+02:02.583	ID:10	my_collect source|08:00 hop|1
+02:02.678	ID:7	my_collect source|08:00 hop|2
+02:02.784	ID:1	my_collect source|08:00 hop|3
+02:02.787	ID:1	App: Recv from 08:00 seqn 3 hops 3
+02:05.663	ID:1	my_collect: sending beacon: seqn 3 metric 0
+02:05.744	ID:5	my_collect: recv beacon from 01:00 seqn 3 metric 0 rssi -74
+02:05.744	ID:4	App: Send seqn 3
+02:05.746	ID:5	Sequence number flush happened! 
+02:05.779	ID:6	my_collect: recv beacon from 01:00 seqn 3 metric 0 rssi -44
+02:05.782	ID:6	Sequence number flush happened! 
+02:05.807	ID:7	my_collect: recv beacon from 01:00 seqn 3 metric 0 rssi -39
+02:05.810	ID:7	Sequence number flush happened! 
+02:05.875	ID:6	my_collect: sending beacon: seqn 3 metric 1
+02:05.900	ID:6	my_collect source|04:00 hop|0
+02:05.971	ID:7	my_collect: sending beacon: seqn 3 metric 1
+02:06.033	ID:1	my_collect source|04:00 hop|1
+02:06.035	ID:1	App: Recv from 04:00 seqn 3 hops 1
+02:06.055	ID:7	my_collect: recv beacon from 06:00 seqn 3 metric 1 rssi -73
+02:06.061	ID:7	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+02:06.126	ID:4	my_collect: recv beacon from 06:00 seqn 3 metric 1 rssi -62
+02:06.129	ID:4	Sequence number flush happened! 
+02:06.140	ID:2	my_collect: recv beacon from 06:00 seqn 3 metric 1 rssi -81
+02:06.142	ID:2	Sequence number flush happened! 
+02:06.227	ID:2	my_collect: sending beacon: seqn 3 metric 2
+02:06.278	ID:6	my_collect: recv beacon from 02:00 seqn 3 metric 2 rssi -81
+02:06.284	ID:6	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+02:06.306	ID:7	my_collect: recv beacon from 02:00 seqn 3 metric 2 rssi -73
+02:06.312	ID:7	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+02:06.369	ID:5	my_collect: recv beacon from 02:00 seqn 3 metric 2 rssi -23
+02:06.375	ID:5	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+02:06.418	ID:4	my_collect: sending beacon: seqn 3 metric 2
+02:06.488	ID:5	my_collect: sending beacon: seqn 3 metric 1
+02:06.640	ID:2	my_collect: recv beacon from 05:00 seqn 3 metric 1 rssi -23
+02:06.646	ID:2	SAME METRIC DIFFERENT PARENT ALERT!! nothing happened! (05:00 metric 1 )
+02:06.682	ID:7	my_collect: recv beacon from 05:00 seqn 3 metric 1 rssi -80
+02:06.688	ID:7	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+02:10.060	ID:3	App: Send seqn 3
+02:10.084	ID:10	my_collect source|03:00 hop|0
+02:10.178	ID:7	my_collect source|03:00 hop|1
+02:10.282	ID:1	my_collect source|03:00 hop|2
+02:10.285	ID:1	App: Recv from 03:00 seqn 3 hops 2
+02:11.978	ID:5	App: Send seqn 3
+02:12.034	ID:1	my_collect source|05:00 hop|0
+02:12.037	ID:1	App: Recv from 05:00 seqn 3 hops 0
+02:13.218	ID:2	App: Send seqn 3
+02:13.276	ID:6	my_collect source|02:00 hop|0
+02:13.409	ID:1	my_collect source|02:00 hop|1
+02:13.412	ID:1	App: Recv from 02:00 seqn 3 hops 1
+02:14.601	ID:10	App: Send seqn 3
+02:14.676	ID:7	my_collect source|0a:00 hop|0
+02:14.782	ID:1	my_collect source|0a:00 hop|1
+02:14.785	ID:1	App: Recv from 0a:00 seqn 3 hops 1
+02:31.733	ID:10	App: Send seqn 4
+02:31.804	ID:7	my_collect source|0a:00 hop|0
+02:31.908	ID:1	my_collect source|0a:00 hop|1
+02:31.911	ID:1	App: Recv from 0a:00 seqn 4 hops 1
+02:33.580	ID:4	App: Send seqn 4
+02:33.653	ID:6	my_collect source|04:00 hop|0
+02:33.783	ID:1	my_collect source|04:00 hop|1
+02:33.786	ID:1	App: Recv from 04:00 seqn 4 hops 1
+02:34.118	ID:7	App: Send seqn 4
+02:34.157	ID:1	my_collect source|07:00 hop|0
+02:34.160	ID:1	App: Recv from 07:00 seqn 4 hops 0
+02:34.850	ID:3	App: Send seqn 4
+02:34.959	ID:10	my_collect source|03:00 hop|0
+02:35.053	ID:7	my_collect source|03:00 hop|1
+02:35.160	ID:1	my_collect source|03:00 hop|2
+02:35.162	ID:1	App: Recv from 03:00 seqn 4 hops 2
+02:35.945	ID:8	App: Send seqn 4
+02:35.985	ID:9	my_collect source|08:00 hop|0
+02:36.082	ID:10	my_collect source|08:00 hop|1
+02:36.179	ID:7	my_collect source|08:00 hop|2
+02:36.283	ID:1	my_collect source|08:00 hop|3
+02:36.286	ID:1	App: Recv from 08:00 seqn 4 hops 3
+02:39.907	ID:5	App: Send seqn 4
+02:40.033	ID:1	my_collect source|05:00 hop|0
+02:40.036	ID:1	App: Recv from 05:00 seqn 4 hops 0
+02:40.357	ID:6	App: Send seqn 4
+02:40.406	ID:1	my_collect source|06:00 hop|0
+02:40.409	ID:1	App: Recv from 06:00 seqn 4 hops 0
+02:45.291	ID:9	App: Send seqn 4
+02:45.327	ID:2	App: Send seqn 4
+02:45.334	ID:10	my_collect source|09:00 hop|0
+03:00.962	ID:4	App: Send seqn 5
+03:01.026	ID:6	my_collect source|04:00 hop|0
+03:01.159	ID:1	my_collect source|04:00 hop|1
+03:01.161	ID:1	App: Recv from 04:00 seqn 5 hops 1
+03:05.663	ID:1	my_collect: sending beacon: seqn 4 metric 0
+03:05.744	ID:5	my_collect: recv beacon from 01:00 seqn 4 metric 0 rssi -74
+03:05.746	ID:5	Sequence number flush happened! 
+03:05.766	ID:2	my_collect: recv beacon from 01:00 seqn 4 metric 0 rssi -63
+03:05.768	ID:2	Sequence number flush happened! 
+03:05.779	ID:6	my_collect: recv beacon from 01:00 seqn 4 metric 0 rssi -44
+03:05.782	ID:6	Sequence number flush happened! 
+03:05.807	ID:7	my_collect: recv beacon from 01:00 seqn 4 metric 0 rssi -39
+03:05.810	ID:7	Sequence number flush happened! 
+03:06.064	ID:2	my_collect: sending beacon: seqn 4 metric 1
+03:06.120	ID:5	my_collect: recv beacon from 02:00 seqn 4 metric 1 rssi -23
+03:06.126	ID:5	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+03:06.156	ID:6	my_collect: recv beacon from 02:00 seqn 4 metric 1 rssi -81
+03:06.161	ID:6	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+03:06.181	ID:7	my_collect: recv beacon from 02:00 seqn 4 metric 1 rssi -73
+03:06.186	ID:7	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+03:06.515	ID:8	App: Send seqn 5
+03:06.609	ID:9	my_collect source|08:00 hop|0
+03:06.706	ID:5	my_collect: sending beacon: seqn 4 metric 1
+03:06.709	ID:10	my_collect source|08:00 hop|1
+03:06.719	ID:6	my_collect: sending beacon: seqn 4 metric 1
+03:06.729	ID:7	my_collect: sending beacon: seqn 4 metric 1
+03:06.857	ID:3	App: Send seqn 5
+03:06.929	ID:7	my_collect source|08:00 hop|2
+03:07.211	ID:10	my_collect source|03:00 hop|0
+03:07.219	ID:10	App: Send seqn 5
+03:07.284	ID:1	my_collect source|08:00 hop|3
+03:07.287	ID:1	App: Recv from 08:00 seqn 5 hops 3
+03:07.304	ID:7	my_collect source|03:00 hop|1
+03:07.428	ID:7	my_collect source|0a:00 hop|0
+03:07.459	ID:10	my_collect: recv beacon from 07:00 seqn 4 metric 1 rssi -80
+03:07.462	ID:10	Sequence number flush happened! 
+03:07.495	ID:5	my_collect: recv beacon from 07:00 seqn 4 metric 1 rssi -80
+03:07.501	ID:5	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+03:07.514	ID:2	my_collect: recv beacon from 07:00 seqn 4 metric 1 rssi -73
+03:07.520	ID:2	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+03:07.522	ID:2	App: Send seqn 5
+03:07.531	ID:6	my_collect: recv beacon from 07:00 seqn 4 metric 1 rssi -73
+03:07.536	ID:6	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+03:07.659	ID:1	my_collect source|02:00 hop|0
+03:07.661	ID:1	App: Recv from 02:00 seqn 5 hops 0
+03:07.821	ID:10	my_collect: sending beacon: seqn 4 metric 2
+03:07.862	ID:9	my_collect: recv beacon from 0a:00 seqn 4 metric 2 rssi -82
+03:07.864	ID:9	Sequence number flush happened! 
+03:07.927	ID:3	my_collect: recv beacon from 0a:00 seqn 4 metric 2 rssi -55
+03:07.930	ID:3	Sequence number flush happened! 
+03:07.930	ID:7	my_collect: recv beacon from 0a:00 seqn 4 metric 2 rssi -80
+03:07.936	ID:7	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+03:08.072	ID:5	App: Send seqn 5
+03:08.159	ID:1	my_collect source|05:00 hop|0
+03:08.162	ID:1	App: Recv from 05:00 seqn 5 hops 0
+03:08.659	ID:1	my_collect source|03:00 hop|2
+03:08.662	ID:1	App: Recv from 03:00 seqn 5 hops 2
+03:08.695	ID:3	my_collect: sending beacon: seqn 4 metric 3
+03:08.840	ID:9	my_collect: sending beacon: seqn 4 metric 3
+03:09.032	ID:7	App: Send seqn 5
+03:09.033	ID:1	my_collect source|0a:00 hop|1
+03:09.036	ID:1	App: Recv from 0a:00 seqn 5 hops 1
+03:09.158	ID:1	my_collect source|07:00 hop|0
+03:09.161	ID:1	App: Recv from 07:00 seqn 5 hops 0
+03:14.240	ID:6	App: Send seqn 5
+03:14.285	ID:1	my_collect source|06:00 hop|0
+03:14.287	ID:1	App: Recv from 06:00 seqn 5 hops 0
+03:14.643	ID:9	App: Send seqn 5
+03:14.709	ID:10	my_collect source|09:00 hop|0
+03:14.804	ID:7	my_collect source|09:00 hop|1
+03:14.908	ID:1	my_collect source|09:00 hop|2
+03:14.911	ID:1	App: Recv from 09:00 seqn 5 hops 2
+03:34.671	ID:2	App: Send seqn 6
+03:34.785	ID:1	my_collect source|02:00 hop|0
+03:34.787	ID:1	App: Recv from 02:00 seqn 6 hops 0
+03:35.181	ID:5	App: Send seqn 6
+03:35.283	ID:1	my_collect source|05:00 hop|0
+03:35.286	ID:1	App: Recv from 05:00 seqn 6 hops 0
+03:35.290	ID:7	App: Send seqn 6
+03:35.408	ID:1	my_collect source|07:00 hop|0
+03:35.411	ID:1	App: Recv from 07:00 seqn 6 hops 0
+03:41.877	ID:9	App: Send seqn 6
+03:41.958	ID:10	my_collect source|09:00 hop|0
+03:42.052	ID:7	my_collect source|09:00 hop|1
+03:42.158	ID:1	my_collect source|09:00 hop|2
+03:42.161	ID:1	App: Recv from 09:00 seqn 6 hops 2
+03:42.679	ID:8	App: Send seqn 6
+03:42.689	ID:4	App: Send seqn 6
+03:43.109	ID:9	my_collect source|08:00 hop|0
+03:43.832	ID:10	my_collect source|08:00 hop|1
+03:43.927	ID:7	my_collect source|08:00 hop|2
+03:44.033	ID:1	my_collect source|08:00 hop|3
+03:44.036	ID:1	App: Recv from 08:00 seqn 6 hops 3
+03:44.453	ID:10	App: Send seqn 6
+03:44.552	ID:7	my_collect source|0a:00 hop|0
+03:44.659	ID:1	my_collect source|0a:00 hop|1
+03:44.661	ID:1	App: Recv from 0a:00 seqn 6 hops 1
+03:45.162	ID:6	App: Send seqn 6
+03:45.283	ID:1	my_collect source|06:00 hop|0
+03:45.285	ID:1	App: Recv from 06:00 seqn 6 hops 0
+03:46.076	ID:3	App: Send seqn 6
+03:46.209	ID:10	my_collect source|03:00 hop|0
+03:46.304	ID:7	my_collect source|03:00 hop|1
+03:46.408	ID:1	my_collect source|03:00 hop|2
+03:46.410	ID:1	App: Recv from 03:00 seqn 6 hops 2
+04:02.510	ID:9	App: Send seqn 7
+04:02.548	ID:7	App: Send seqn 7
+04:02.659	ID:1	my_collect source|07:00 hop|0
+04:02.662	ID:1	App: Recv from 07:00 seqn 7 hops 0
+04:02.706	ID:10	my_collect source|09:00 hop|0
+04:02.803	ID:7	my_collect source|09:00 hop|1
+04:02.909	ID:1	my_collect source|09:00 hop|2
+04:02.912	ID:1	App: Recv from 09:00 seqn 7 hops 2
+04:02.991	ID:2	App: Send seqn 7
+04:03.033	ID:1	my_collect source|02:00 hop|0
+04:03.036	ID:1	App: Recv from 02:00 seqn 7 hops 0
+04:03.876	ID:5	App: Send seqn 7
+04:03.906	ID:1	my_collect source|05:00 hop|0
+04:03.909	ID:1	App: Recv from 05:00 seqn 7 hops 0
+04:04.554	ID:10	App: Send seqn 7
+04:04.679	ID:7	my_collect source|0a:00 hop|0
+04:04.784	ID:1	my_collect source|0a:00 hop|1
+04:04.786	ID:1	App: Recv from 0a:00 seqn 7 hops 1
+04:05.663	ID:1	my_collect: sending beacon: seqn 5 metric 0
+04:05.744	ID:5	my_collect: recv beacon from 01:00 seqn 5 metric 0 rssi -74
+04:05.746	ID:5	Sequence number flush happened! 
+04:05.766	ID:2	my_collect: recv beacon from 01:00 seqn 5 metric 0 rssi -63
+04:05.768	ID:2	Sequence number flush happened! 
+04:05.779	ID:6	my_collect: recv beacon from 01:00 seqn 5 metric 0 rssi -44
+04:05.782	ID:6	Sequence number flush happened! 
+04:05.807	ID:7	my_collect: recv beacon from 01:00 seqn 5 metric 0 rssi -39
+04:05.809	ID:7	Sequence number flush happened! 
+04:06.157	ID:2	my_collect: sending beacon: seqn 5 metric 1
+04:06.181	ID:7	my_collect: recv beacon from 02:00 seqn 5 metric 1 rssi -73
+04:06.187	ID:7	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+04:06.211	ID:6	my_collect: sending beacon: seqn 5 metric 1
+04:06.244	ID:5	my_collect: recv beacon from 02:00 seqn 5 metric 1 rssi -23
+04:06.250	ID:5	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+04:06.279	ID:6	my_collect: recv beacon from 02:00 seqn 5 metric 1 rssi -81
+04:06.285	ID:6	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+04:06.378	ID:4	my_collect: recv beacon from 06:00 seqn 5 metric 1 rssi -62
+04:06.380	ID:4	Sequence number flush happened! 
+04:06.389	ID:2	my_collect: recv beacon from 06:00 seqn 5 metric 1 rssi -81
+04:06.395	ID:2	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+04:06.417	ID:5	my_collect: sending beacon: seqn 5 metric 1
+04:06.431	ID:7	my_collect: recv beacon from 06:00 seqn 5 metric 1 rssi -73
+04:06.437	ID:7	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+04:06.515	ID:2	my_collect: recv beacon from 05:00 seqn 5 metric 1 rssi -23
+04:06.521	ID:2	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+04:06.556	ID:7	my_collect: recv beacon from 05:00 seqn 5 metric 1 rssi -80
+04:06.562	ID:7	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+04:06.776	ID:7	my_collect: sending beacon: seqn 5 metric 1
+04:06.835	ID:10	my_collect: recv beacon from 07:00 seqn 5 metric 1 rssi -80
+04:06.837	ID:10	Sequence number flush happened! 
+04:06.868	ID:5	my_collect: recv beacon from 07:00 seqn 5 metric 1 rssi -80
+04:06.874	ID:5	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+04:06.884	ID:4	App: Send seqn 7
+04:06.890	ID:2	my_collect: recv beacon from 07:00 seqn 5 metric 1 rssi -73
+04:06.896	ID:2	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+04:07.026	ID:6	my_collect source|04:00 hop|0
+04:07.028	ID:4	my_collect: sending beacon: seqn 5 metric 2
+04:07.159	ID:1	my_collect source|04:00 hop|1
+04:07.162	ID:1	App: Recv from 04:00 seqn 7 hops 1
+04:07.553	ID:3	App: Send seqn 7
+04:07.583	ID:10	my_collect source|03:00 hop|0
+04:07.678	ID:7	my_collect source|03:00 hop|1
+04:07.679	ID:10	my_collect: sending beacon: seqn 5 metric 2
+04:07.784	ID:1	my_collect source|03:00 hop|2
+04:07.787	ID:1	App: Recv from 03:00 seqn 7 hops 2
+04:07.904	ID:6	my_collect: recv beacon from 04:00 seqn 5 metric 2 rssi -62
+04:07.910	ID:6	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+04:08.178	ID:3	my_collect: recv beacon from 0a:00 seqn 5 metric 2 rssi -55
+04:08.181	ID:3	Sequence number flush happened! 
+04:08.181	ID:7	my_collect: recv beacon from 0a:00 seqn 5 metric 2 rssi -80
+04:08.187	ID:7	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+04:08.239	ID:9	my_collect: recv beacon from 0a:00 seqn 5 metric 2 rssi -82
+04:08.241	ID:9	Sequence number flush happened! 
+04:08.500	ID:3	my_collect: sending beacon: seqn 5 metric 3
+04:08.586	ID:10	my_collect: recv beacon from 03:00 seqn 5 metric 3 rssi -55
+04:08.592	ID:10	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+04:08.603	ID:8	my_collect: recv beacon from 03:00 seqn 5 metric 3 rssi -79
+04:08.605	ID:8	Sequence number flush happened! 
+04:08.611	ID:9	my_collect: recv beacon from 03:00 seqn 5 metric 3 rssi -42
+04:08.617	ID:9	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+04:08.739	ID:9	my_collect: sending beacon: seqn 5 metric 3
+04:08.804	ID:3	my_collect: recv beacon from 09:00 seqn 5 metric 3 rssi -42
+04:08.809	ID:3	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+04:08.836	ID:10	my_collect: recv beacon from 09:00 seqn 5 metric 3 rssi -82
+04:08.842	ID:10	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+04:08.853	ID:8	my_collect: recv beacon from 09:00 seqn 5 metric 3 rssi -62
+04:08.858	ID:8	SAME METRIC DIFFERENT PARENT ALERT!! nothing happened! (09:00 metric 3 )
+04:09.041	ID:8	my_collect: sending beacon: seqn 5 metric 4
+04:09.114	ID:9	my_collect: recv beacon from 08:00 seqn 5 metric 4 rssi -62
+04:09.120	ID:9	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+04:09.177	ID:3	my_collect: recv beacon from 08:00 seqn 5 metric 4 rssi -79
+04:09.183	ID:3	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+04:12.951	ID:6	App: Send seqn 7
+04:13.034	ID:1	my_collect source|06:00 hop|0
+04:13.036	ID:1	App: Recv from 06:00 seqn 7 hops 0
+04:13.562	ID:8	App: Send seqn 7
+04:13.676	ID:3	my_collect source|08:00 hop|0
+04:13.706	ID:10	my_collect source|08:00 hop|1
+04:13.803	ID:7	my_collect source|08:00 hop|2
+04:13.909	ID:1	my_collect source|08:00 hop|3
+04:13.912	ID:1	App: Recv from 08:00 seqn 7 hops 3
+04:31.673	ID:5	App: Send seqn 8
+04:31.784	ID:1	my_collect source|05:00 hop|0
+04:31.787	ID:1	App: Recv from 05:00 seqn 8 hops 0
+04:33.267	ID:4	App: Send seqn 8
+04:33.400	ID:6	my_collect source|04:00 hop|0
+04:33.533	ID:1	my_collect source|04:00 hop|1
+04:33.535	ID:1	App: Recv from 04:00 seqn 8 hops 1
+04:36.484	ID:8	App: Send seqn 8
+04:36.538	ID:2	App: Send seqn 8
+04:36.550	ID:3	my_collect source|08:00 hop|0
+04:36.959	ID:10	my_collect source|08:00 hop|1
+04:37.676	ID:7	my_collect source|08:00 hop|2
+04:37.782	ID:1	my_collect source|08:00 hop|3
+04:37.785	ID:1	App: Recv from 08:00 seqn 8 hops 3
+04:38.397	ID:10	App: Send seqn 8
+04:38.428	ID:7	my_collect source|0a:00 hop|0
+04:38.534	ID:1	my_collect source|0a:00 hop|1
+04:38.537	ID:1	App: Recv from 0a:00 seqn 8 hops 1
+04:38.719	ID:7	App: Send seqn 8
+04:38.782	ID:1	my_collect source|07:00 hop|0
+04:38.785	ID:1	App: Recv from 07:00 seqn 8 hops 0
+04:40.045	ID:6	App: Send seqn 8
+04:40.159	ID:1	my_collect source|06:00 hop|0
+04:40.161	ID:1	App: Recv from 06:00 seqn 8 hops 0
+04:42.932	ID:9	App: Send seqn 8
+04:42.958	ID:10	my_collect source|09:00 hop|0
+04:43.052	ID:7	my_collect source|09:00 hop|1
+04:43.159	ID:1	my_collect source|09:00 hop|2
+04:43.161	ID:1	App: Recv from 09:00 seqn 8 hops 2
+04:44.537	ID:3	App: Send seqn 8
+04:44.584	ID:10	my_collect source|03:00 hop|0
+04:44.679	ID:7	my_collect source|03:00 hop|1
+04:44.782	ID:1	my_collect source|03:00 hop|2
+04:44.785	ID:1	App: Recv from 03:00 seqn 8 hops 2
+05:00.900	ID:4	App: Send seqn 9
+05:01.028	ID:6	my_collect source|04:00 hop|0
+05:01.158	ID:1	my_collect source|04:00 hop|1
+05:01.161	ID:1	App: Recv from 04:00 seqn 9 hops 1
+05:03.177	ID:6	App: Send seqn 9
+05:03.281	ID:1	my_collect source|06:00 hop|0
+05:03.284	ID:1	App: Recv from 06:00 seqn 9 hops 0
+05:04.525	ID:5	App: Send seqn 9
+05:04.657	ID:1	my_collect source|05:00 hop|0
+05:04.660	ID:1	App: Recv from 05:00 seqn 9 hops 0
+05:05.663	ID:1	my_collect: sending beacon: seqn 6 metric 0
+05:05.744	ID:5	my_collect: recv beacon from 01:00 seqn 6 metric 0 rssi -74
+05:05.746	ID:5	Sequence number flush happened! 
+05:05.766	ID:2	my_collect: recv beacon from 01:00 seqn 6 metric 0 rssi -63
+05:05.768	ID:2	Sequence number flush happened! 
+05:05.779	ID:6	my_collect: recv beacon from 01:00 seqn 6 metric 0 rssi -44
+05:05.782	ID:6	Sequence number flush happened! 
+05:05.795	ID:3	App: Send seqn 9
+05:05.807	ID:7	my_collect: recv beacon from 01:00 seqn 6 metric 0 rssi -39
+05:05.810	ID:7	Sequence number flush happened! 
+05:05.833	ID:10	my_collect source|03:00 hop|0
+05:05.893	ID:7	my_collect: sending beacon: seqn 6 metric 1
+05:05.906	ID:6	my_collect: sending beacon: seqn 6 metric 1
+05:06.053	ID:7	my_collect source|03:00 hop|1
+05:06.097	ID:5	my_collect: sending beacon: seqn 6 metric 1
+05:06.159	ID:1	my_collect source|03:00 hop|2
+05:06.162	ID:1	App: Recv from 03:00 seqn 9 hops 2
+05:06.212	ID:2	my_collect: sending beacon: seqn 6 metric 1
+05:06.244	ID:5	my_collect: recv beacon from 02:00 seqn 6 metric 1 rssi -23
+05:06.250	ID:5	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+05:06.279	ID:6	my_collect: recv beacon from 02:00 seqn 6 metric 1 rssi -81
+05:06.285	ID:6	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+05:06.307	ID:7	my_collect: recv beacon from 02:00 seqn 6 metric 1 rssi -73
+05:06.313	ID:7	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+05:06.515	ID:2	App: Send seqn 9
+05:06.533	ID:1	my_collect source|02:00 hop|0
+05:06.536	ID:1	App: Recv from 02:00 seqn 9 hops 0
+05:06.778	ID:6	my_collect: recv beacon from 05:00 seqn 6 metric 1 rssi -94
+05:06.784	ID:6	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+05:07.471	ID:9	App: Send seqn 9
+05:07.583	ID:10	my_collect source|09:00 hop|0
+05:07.677	ID:7	my_collect: recv beacon from 05:00 seqn 6 metric 1 rssi -80
+05:07.683	ID:7	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+05:07.803	ID:7	my_collect source|09:00 hop|1
+05:07.865	ID:5	my_collect: recv beacon from 07:00 seqn 6 metric 1 rssi -80
+05:07.871	ID:5	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+05:07.909	ID:1	my_collect source|09:00 hop|2
+05:07.912	ID:1	App: Recv from 09:00 seqn 9 hops 2
+05:11.273	ID:8	App: Send seqn 9
+05:11.301	ID:3	my_collect source|08:00 hop|0
+05:11.334	ID:10	my_collect source|08:00 hop|1
+05:11.428	ID:7	my_collect source|08:00 hop|2
+05:11.532	ID:1	my_collect source|08:00 hop|3
+05:11.535	ID:1	App: Recv from 08:00 seqn 9 hops 3
+05:14.592	ID:10	App: Send seqn 9
+05:14.677	ID:7	my_collect source|0a:00 hop|0
+05:14.784	ID:1	my_collect source|0a:00 hop|1
+05:14.787	ID:1	App: Recv from 0a:00 seqn 9 hops 1
+05:15.383	ID:7	App: Send seqn 9
+05:15.406	ID:1	my_collect source|07:00 hop|0
+05:15.409	ID:1	App: Recv from 07:00 seqn 9 hops 0
+05:35.599	ID:6	App: Send seqn 10
+05:35.658	ID:1	my_collect source|06:00 hop|0
+05:35.661	ID:1	App: Recv from 06:00 seqn 10 hops 0
+05:38.882	ID:10	App: Send seqn 10
+05:38.929	ID:7	my_collect source|0a:00 hop|0
+05:39.033	ID:1	my_collect source|0a:00 hop|1
+05:39.036	ID:1	App: Recv from 0a:00 seqn 10 hops 1
+05:40.281	ID:8	App: Send seqn 10
+05:40.301	ID:3	my_collect source|08:00 hop|0
+05:40.334	ID:10	my_collect source|08:00 hop|1
+05:40.428	ID:7	my_collect source|08:00 hop|2
+05:40.532	ID:1	my_collect source|08:00 hop|3
+05:40.535	ID:1	App: Recv from 08:00 seqn 10 hops 3
+05:41.230	ID:9	App: Send seqn 10
+05:41.334	ID:10	my_collect source|09:00 hop|0
+05:41.426	ID:7	my_collect source|09:00 hop|1
+05:41.532	ID:1	my_collect source|09:00 hop|2
+05:41.535	ID:1	App: Recv from 09:00 seqn 10 hops 2
+05:41.877	ID:4	App: Send seqn 10
+05:41.897	ID:3	App: Send seqn 10
+05:41.902	ID:6	my_collect source|04:00 hop|0
+05:43.485	ID:7	App: Send seqn 10
+05:43.499	ID:2	App: Send seqn 10
+05:43.534	ID:1	my_collect source|07:00 hop|0
+05:43.537	ID:1	App: Recv from 07:00 seqn 10 hops 0
+05:43.659	ID:1	my_collect source|02:00 hop|0
+05:43.662	ID:1	App: Recv from 02:00 seqn 10 hops 0
+05:45.314	ID:5	App: Send seqn 10
+05:45.409	ID:1	my_collect source|05:00 hop|0
+05:45.412	ID:1	App: Recv from 05:00 seqn 10 hops 0
+06:02.353	ID:5	App: Send seqn 11
+06:02.409	ID:1	my_collect source|05:00 hop|0
+06:02.412	ID:1	App: Recv from 05:00 seqn 11 hops 0
+06:03.639	ID:6	App: Send seqn 11
+06:03.660	ID:1	my_collect source|06:00 hop|0
+06:03.662	ID:1	App: Recv from 06:00 seqn 11 hops 0
+06:03.858	ID:2	App: Send seqn 11
+06:03.908	ID:1	my_collect source|02:00 hop|0
+06:03.911	ID:1	App: Recv from 02:00 seqn 11 hops 0
+06:05.663	ID:1	my_collect: sending beacon: seqn 7 metric 0
+06:05.744	ID:5	my_collect: recv beacon from 01:00 seqn 7 metric 0 rssi -74
+06:05.746	ID:5	Sequence number flush happened! 
+06:05.766	ID:2	my_collect: recv beacon from 01:00 seqn 7 metric 0 rssi -63
+06:05.768	ID:2	Sequence number flush happened! 
+06:05.780	ID:6	my_collect: recv beacon from 01:00 seqn 7 metric 0 rssi -44
+06:05.782	ID:6	Sequence number flush happened! 
+06:05.807	ID:7	my_collect: recv beacon from 01:00 seqn 7 metric 0 rssi -39
+06:05.809	ID:7	Sequence number flush happened! 
+06:06.149	ID:6	my_collect: sending beacon: seqn 7 metric 1
+06:06.181	ID:7	my_collect: recv beacon from 06:00 seqn 7 metric 1 rssi -73
+06:06.187	ID:7	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+06:06.252	ID:4	my_collect: recv beacon from 06:00 seqn 7 metric 1 rssi -62
+06:06.254	ID:4	Sequence number flush happened! 
+06:06.266	ID:2	my_collect: recv beacon from 06:00 seqn 7 metric 1 rssi -81
+06:06.271	ID:2	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+06:06.284	ID:7	my_collect: sending beacon: seqn 7 metric 1
+06:06.335	ID:10	my_collect: recv beacon from 07:00 seqn 7 metric 1 rssi -80
+06:06.337	ID:10	Sequence number flush happened! 
+06:06.364	ID:5	my_collect: sending beacon: seqn 7 metric 1
+06:06.371	ID:5	my_collect: recv beacon from 07:00 seqn 7 metric 1 rssi -80
+06:06.377	ID:5	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+06:06.389	ID:2	my_collect: recv beacon from 07:00 seqn 7 metric 1 rssi -73
+06:06.395	ID:2	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+06:06.406	ID:6	my_collect: recv beacon from 07:00 seqn 7 metric 1 rssi -73
+06:06.412	ID:6	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+06:06.488	ID:4	my_collect: sending beacon: seqn 7 metric 2
+06:06.680	ID:2	my_collect: sending beacon: seqn 7 metric 1
+06:06.745	ID:5	my_collect: recv beacon from 02:00 seqn 7 metric 1 rssi -23
+06:06.751	ID:5	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+06:06.781	ID:6	my_collect: recv beacon from 02:00 seqn 7 metric 1 rssi -81
+06:06.787	ID:6	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+06:06.806	ID:7	my_collect: recv beacon from 02:00 seqn 7 metric 1 rssi -73
+06:06.811	ID:7	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+06:07.243	ID:10	my_collect: sending beacon: seqn 7 metric 2
+06:07.303	ID:3	my_collect: recv beacon from 0a:00 seqn 7 metric 2 rssi -55
+06:07.305	ID:3	Sequence number flush happened! 
+06:07.306	ID:7	my_collect: recv beacon from 0a:00 seqn 7 metric 2 rssi -80
+06:07.311	ID:7	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+06:07.360	ID:9	my_collect: recv beacon from 0a:00 seqn 7 metric 2 rssi -82
+06:07.362	ID:9	Sequence number flush happened! 
+06:07.758	ID:3	my_collect: sending beacon: seqn 7 metric 3
+06:07.778	ID:9	my_collect: sending beacon: seqn 7 metric 3
+06:07.837	ID:10	my_collect: recv beacon from 03:00 seqn 7 metric 3 rssi -55
+06:07.842	ID:10	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+06:07.853	ID:8	my_collect: recv beacon from 03:00 seqn 7 metric 3 rssi -79
+06:07.855	ID:8	Sequence number flush happened! 
+06:07.861	ID:9	my_collect: recv beacon from 03:00 seqn 7 metric 3 rssi -42
+06:07.867	ID:9	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+06:07.976	ID:8	my_collect: recv beacon from 09:00 seqn 7 metric 3 rssi -62
+06:07.981	ID:8	SAME METRIC DIFFERENT PARENT ALERT!! nothing happened! (09:00 metric 3 )
+06:08.053	ID:3	my_collect: recv beacon from 09:00 seqn 7 metric 3 rssi -42
+06:08.058	ID:3	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+06:08.086	ID:10	my_collect: recv beacon from 09:00 seqn 7 metric 3 rssi -82
+06:08.091	ID:10	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+06:08.133	ID:8	App: Send seqn 11
+06:08.175	ID:3	my_collect source|08:00 hop|0
+06:08.207	ID:10	my_collect source|08:00 hop|1
+06:08.302	ID:7	my_collect source|08:00 hop|2
+06:08.389	ID:10	App: Send seqn 11
+06:08.409	ID:1	my_collect source|08:00 hop|3
+06:08.412	ID:1	App: Recv from 08:00 seqn 11 hops 3
+06:08.455	ID:8	my_collect: sending beacon: seqn 7 metric 4
+06:08.487	ID:9	my_collect: recv beacon from 08:00 seqn 7 metric 4 rssi -62
+06:08.492	ID:9	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+06:08.679	ID:7	my_collect source|0a:00 hop|0
+06:08.783	ID:1	my_collect source|0a:00 hop|1
+06:08.786	ID:1	App: Recv from 0a:00 seqn 11 hops 1
+06:09.322	ID:4	App: Send seqn 11
+06:09.400	ID:6	my_collect source|04:00 hop|0
+06:09.533	ID:1	my_collect source|04:00 hop|1
+06:09.536	ID:1	App: Recv from 04:00 seqn 11 hops 1
+06:11.837	ID:7	App: Send seqn 11
+06:11.907	ID:1	my_collect source|07:00 hop|0
+06:11.910	ID:1	App: Recv from 07:00 seqn 11 hops 0
+06:12.831	ID:9	App: Send seqn 11
+06:12.959	ID:10	my_collect source|09:00 hop|0
+06:12.967	ID:3	App: Send seqn 11
+06:13.053	ID:7	my_collect source|09:00 hop|1
+06:31.998	ID:6	App: Send seqn 12
+06:32.033	ID:1	my_collect source|06:00 hop|0
+06:32.036	ID:1	App: Recv from 06:00 seqn 12 hops 0
+06:32.593	ID:2	App: Send seqn 12
+06:32.659	ID:1	my_collect source|02:00 hop|0
+06:32.662	ID:1	App: Recv from 02:00 seqn 12 hops 0
+06:32.976	ID:10	App: Send seqn 12
+06:33.054	ID:7	my_collect source|0a:00 hop|0
+06:33.158	ID:1	my_collect source|0a:00 hop|1
+06:33.161	ID:1	App: Recv from 0a:00 seqn 12 hops 1
+06:34.620	ID:4	App: Send seqn 12
+06:34.652	ID:6	my_collect source|04:00 hop|0
+06:34.782	ID:1	my_collect source|04:00 hop|1
+06:34.785	ID:1	App: Recv from 04:00 seqn 12 hops 1
+06:36.071	ID:7	App: Send seqn 12
+06:36.158	ID:1	my_collect source|07:00 hop|0
+06:36.161	ID:1	App: Recv from 07:00 seqn 12 hops 0
+06:36.675	ID:9	App: Send seqn 12
+06:36.707	ID:10	my_collect source|09:00 hop|0
+06:36.804	ID:7	my_collect source|09:00 hop|1
+06:36.908	ID:1	my_collect source|09:00 hop|2
+06:36.911	ID:1	App: Recv from 09:00 seqn 12 hops 2
+06:37.740	ID:3	App: Send seqn 12
+06:37.833	ID:10	my_collect source|03:00 hop|0
+06:37.927	ID:7	my_collect source|03:00 hop|1
+06:38.033	ID:1	my_collect source|03:00 hop|2
+06:38.036	ID:1	App: Recv from 03:00 seqn 12 hops 2
+06:38.782	ID:5	App: Send seqn 12
+06:38.908	ID:1	my_collect source|05:00 hop|0
+06:38.911	ID:1	App: Recv from 05:00 seqn 12 hops 0
+06:43.367	ID:8	App: Send seqn 12
+06:43.426	ID:3	my_collect source|08:00 hop|0
+06:43.456	ID:10	my_collect source|08:00 hop|1
+06:43.553	ID:7	my_collect source|08:00 hop|2
+06:43.659	ID:1	my_collect source|08:00 hop|3
+06:43.662	ID:1	App: Recv from 08:00 seqn 12 hops 3
+07:02.475	ID:2	App: Send seqn 13
+07:02.534	ID:1	my_collect source|02:00 hop|0
+07:02.537	ID:1	App: Recv from 02:00 seqn 13 hops 0
+07:02.608	ID:10	App: Send seqn 13
+07:02.679	ID:7	my_collect source|0a:00 hop|0
+07:02.783	ID:1	my_collect source|0a:00 hop|1
+07:02.786	ID:1	App: Recv from 0a:00 seqn 13 hops 1
+07:04.221	ID:4	App: Send seqn 13
+07:04.277	ID:6	my_collect source|04:00 hop|0
+07:04.370	ID:9	App: Send seqn 13
+07:04.658	ID:1	my_collect source|04:00 hop|1
+07:04.661	ID:1	App: Recv from 04:00 seqn 13 hops 1
+07:04.708	ID:10	my_collect source|09:00 hop|0
+07:05.429	ID:7	my_collect source|09:00 hop|1
+07:05.663	ID:1	my_collect: sending beacon: seqn 0 metric 0
+07:05.744	ID:5	my_collect: recv beacon from 01:00 seqn 0 metric 0 rssi -74
+07:05.746	ID:5	Sequence number flush happened! 
+07:05.766	ID:2	my_collect: recv beacon from 01:00 seqn 0 metric 0 rssi -63
+07:05.768	ID:2	Sequence number flush happened! 
+07:05.780	ID:6	my_collect: recv beacon from 01:00 seqn 0 metric 0 rssi -44
+07:05.782	ID:6	Sequence number flush happened! 
+07:05.807	ID:7	my_collect: recv beacon from 01:00 seqn 0 metric 0 rssi -39
+07:05.809	ID:7	Sequence number flush happened! 
+07:05.954	ID:2	my_collect: sending beacon: seqn 0 metric 1
+07:05.994	ID:5	my_collect: recv beacon from 02:00 seqn 0 metric 1 rssi -23
+07:06.000	ID:5	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+07:06.030	ID:6	my_collect: recv beacon from 02:00 seqn 0 metric 1 rssi -81
+07:06.035	ID:6	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+07:06.057	ID:7	my_collect: recv beacon from 02:00 seqn 0 metric 1 rssi -73
+07:06.063	ID:7	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+07:06.159	ID:1	my_collect source|09:00 hop|2
+07:06.162	ID:1	App: Recv from 09:00 seqn 13 hops 2
+07:06.367	ID:6	my_collect: sending beacon: seqn 0 metric 1
+07:06.390	ID:2	my_collect: recv beacon from 06:00 seqn 0 metric 1 rssi -81
+07:06.396	ID:2	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+07:06.432	ID:7	my_collect: recv beacon from 06:00 seqn 0 metric 1 rssi -73
+07:06.437	ID:7	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+07:06.447	ID:5	App: Send seqn 13
+07:06.499	ID:8	App: Send seqn 13
+07:06.550	ID:7	my_collect: sending beacon: seqn 0 metric 1
+07:06.581	ID:5	my_collect: sending beacon: seqn 0 metric 1
+07:06.618	ID:5	my_collect: recv beacon from 07:00 seqn 0 metric 1 rssi -80
+07:06.624	ID:5	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+07:06.640	ID:2	my_collect: recv beacon from 07:00 seqn 0 metric 1 rssi -73
+07:06.646	ID:2	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+07:06.891	ID:2	my_collect: recv beacon from 05:00 seqn 0 metric 1 rssi -23
+07:06.897	ID:2	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+07:07.050	ID:3	my_collect source|08:00 hop|0
+07:07.083	ID:10	my_collect source|08:00 hop|1
+07:08.703	ID:7	App: Send seqn 13
+07:08.781	ID:1	my_collect source|07:00 hop|0
+07:08.784	ID:1	App: Recv from 07:00 seqn 13 hops 0
+07:08.935	ID:3	App: Send seqn 13
+07:08.959	ID:10	my_collect source|03:00 hop|0
+07:09.053	ID:7	my_collect source|03:00 hop|1
+07:09.157	ID:1	my_collect source|03:00 hop|2
+07:09.160	ID:1	App: Recv from 03:00 seqn 13 hops 2
+07:11.068	ID:6	App: Send seqn 13
+07:11.158	ID:1	my_collect source|06:00 hop|0
+07:11.161	ID:1	App: Recv from 06:00 seqn 13 hops 0
+07:32.976	ID:8	App: Send seqn 14
+07:33.052	ID:3	my_collect source|08:00 hop|0
+07:33.082	ID:10	my_collect source|08:00 hop|1
+07:33.177	ID:7	my_collect source|08:00 hop|2
+07:33.220	ID:5	App: Send seqn 14
+07:33.284	ID:1	my_collect source|08:00 hop|3
+07:33.287	ID:1	App: Recv from 08:00 seqn 14 hops 3
+07:33.409	ID:1	my_collect source|05:00 hop|0
+07:33.411	ID:1	App: Recv from 05:00 seqn 14 hops 0
+07:35.225	ID:3	App: Send seqn 14
+07:35.334	ID:10	my_collect source|03:00 hop|0
+07:35.428	ID:7	my_collect source|03:00 hop|1
+07:35.535	ID:1	my_collect source|03:00 hop|2
+07:35.538	ID:1	App: Recv from 03:00 seqn 14 hops 2
+07:36.024	ID:7	App: Send seqn 14
+07:36.159	ID:1	my_collect source|07:00 hop|0
+07:36.162	ID:1	App: Recv from 07:00 seqn 14 hops 0
+07:39.842	ID:6	App: Send seqn 14
+07:39.908	ID:1	my_collect source|06:00 hop|0
+07:39.911	ID:1	App: Recv from 06:00 seqn 14 hops 0
+07:43.159	ID:9	App: Send seqn 14
+07:43.208	ID:10	my_collect source|09:00 hop|0
+07:43.303	ID:7	my_collect source|09:00 hop|1
+07:43.409	ID:1	my_collect source|09:00 hop|2
+07:43.412	ID:1	App: Recv from 09:00 seqn 14 hops 2
+07:43.791	ID:4	App: Send seqn 14
+07:43.902	ID:6	my_collect source|04:00 hop|0
+07:44.032	ID:1	my_collect source|04:00 hop|1
+07:44.035	ID:1	App: Recv from 04:00 seqn 14 hops 1
+07:45.397	ID:2	App: Send seqn 14
+07:45.533	ID:1	my_collect source|02:00 hop|0
+07:45.536	ID:1	App: Recv from 02:00 seqn 14 hops 0
+07:45.585	ID:10	App: Send seqn 14
+07:45.677	ID:7	my_collect source|0a:00 hop|0
+07:45.784	ID:1	my_collect source|0a:00 hop|1
+07:45.787	ID:1	App: Recv from 0a:00 seqn 14 hops 1
+08:01.955	ID:4	App: Send seqn 15
+08:02.026	ID:6	my_collect source|04:00 hop|0
+08:02.159	ID:1	my_collect source|04:00 hop|1
+08:02.162	ID:1	App: Recv from 04:00 seqn 15 hops 1
+08:02.744	ID:5	App: Send seqn 15
+08:02.784	ID:1	my_collect source|05:00 hop|0
+08:02.787	ID:1	App: Recv from 05:00 seqn 15 hops 0
+08:03.037	ID:6	App: Send seqn 15
+08:03.158	ID:1	my_collect source|06:00 hop|0
+08:03.161	ID:1	App: Recv from 06:00 seqn 15 hops 0
+08:05.663	ID:1	my_collect: sending beacon: seqn 1 metric 0
+08:05.744	ID:5	my_collect: recv beacon from 01:00 seqn 1 metric 0 rssi -74
+08:05.746	ID:5	Sequence number flush happened! 
+08:05.766	ID:2	my_collect: recv beacon from 01:00 seqn 1 metric 0 rssi -63
+08:05.768	ID:2	Sequence number flush happened! 
+08:05.779	ID:6	my_collect: recv beacon from 01:00 seqn 1 metric 0 rssi -44
+08:05.782	ID:6	Sequence number flush happened! 
+08:05.807	ID:7	my_collect: recv beacon from 01:00 seqn 1 metric 0 rssi -39
+08:05.809	ID:7	Sequence number flush happened! 
+08:05.885	ID:7	my_collect: sending beacon: seqn 1 metric 1
+08:05.921	ID:8	App: Send seqn 15
+08:05.941	ID:5	my_collect: sending beacon: seqn 1 metric 1
+08:05.994	ID:5	my_collect: recv beacon from 07:00 seqn 1 metric 1 rssi -80
+08:06.000	ID:5	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+08:06.016	ID:2	my_collect: recv beacon from 07:00 seqn 1 metric 1 rssi -73
+08:06.022	ID:2	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+08:06.052	ID:3	my_collect source|08:00 hop|0
+08:06.208	ID:10	my_collect source|08:00 hop|1
+08:06.302	ID:7	my_collect source|08:00 hop|2
+08:06.409	ID:1	my_collect source|08:00 hop|3
+08:06.412	ID:1	App: Recv from 08:00 seqn 15 hops 3
+08:06.446	ID:2	my_collect: sending beacon: seqn 1 metric 1
+08:06.492	ID:5	my_collect: recv beacon from 02:00 seqn 1 metric 1 rssi -23
+08:06.497	ID:5	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+08:06.530	ID:6	my_collect: recv beacon from 02:00 seqn 1 metric 1 rssi -81
+08:06.536	ID:6	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+08:06.555	ID:7	my_collect: recv beacon from 02:00 seqn 1 metric 1 rssi -73
+08:06.561	ID:7	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+08:06.578	ID:6	my_collect: sending beacon: seqn 1 metric 1
+08:06.681	ID:7	my_collect: recv beacon from 06:00 seqn 1 metric 1 rssi -73
+08:06.687	ID:7	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+08:06.752	ID:4	my_collect: recv beacon from 06:00 seqn 1 metric 1 rssi -62
+08:06.758	ID:4	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+08:06.766	ID:2	my_collect: recv beacon from 06:00 seqn 1 metric 1 rssi -81
+08:06.771	ID:2	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+08:07.030	ID:10	App: Send seqn 15
+08:07.053	ID:7	my_collect source|0a:00 hop|0
+08:07.157	ID:1	my_collect source|0a:00 hop|1
+08:07.160	ID:1	App: Recv from 0a:00 seqn 15 hops 1
+08:09.166	ID:9	App: Send seqn 15
+08:09.209	ID:10	my_collect source|09:00 hop|0
+08:09.301	ID:7	my_collect source|09:00 hop|1
+08:09.407	ID:1	my_collect source|09:00 hop|2
+08:09.410	ID:1	App: Recv from 09:00 seqn 15 hops 2
+08:12.187	ID:2	App: Send seqn 15
+08:12.284	ID:1	my_collect source|02:00 hop|0
+08:12.287	ID:1	App: Recv from 02:00 seqn 15 hops 0
+08:12.594	ID:7	App: Send seqn 15
+08:12.658	ID:1	my_collect source|07:00 hop|0
+08:12.661	ID:1	App: Recv from 07:00 seqn 15 hops 0
+08:13.732	ID:3	App: Send seqn 15
+08:13.834	ID:10	my_collect source|03:00 hop|0
+08:13.929	ID:7	my_collect source|03:00 hop|1
+08:14.033	ID:1	my_collect source|03:00 hop|2
+08:14.036	ID:1	App: Recv from 03:00 seqn 15 hops 2
+08:31.961	ID:8	App: Send seqn 16
+08:32.051	ID:3	my_collect source|08:00 hop|0
+08:32.084	ID:10	my_collect source|08:00 hop|1
+08:32.304	ID:7	my_collect source|08:00 hop|2
+08:32.407	ID:1	my_collect source|08:00 hop|3
+08:32.410	ID:1	App: Recv from 08:00 seqn 16 hops 3
+08:32.569	ID:10	App: Send seqn 16
+08:32.678	ID:7	my_collect source|0a:00 hop|0
+08:32.782	ID:1	my_collect source|0a:00 hop|1
+08:32.785	ID:1	App: Recv from 0a:00 seqn 16 hops 1
+08:34.185	ID:6	App: Send seqn 16
+08:34.282	ID:1	my_collect source|06:00 hop|0
+08:34.285	ID:1	App: Recv from 06:00 seqn 16 hops 0
+08:35.018	ID:9	App: Send seqn 16
+08:35.082	ID:10	my_collect source|09:00 hop|0
+08:35.179	ID:7	my_collect source|09:00 hop|1
+08:35.283	ID:1	my_collect source|09:00 hop|2
+08:35.286	ID:1	App: Recv from 09:00 seqn 16 hops 2
+08:35.641	ID:7	App: Send seqn 16
+08:35.659	ID:1	my_collect source|07:00 hop|0
+08:35.662	ID:1	App: Recv from 07:00 seqn 16 hops 0
+08:36.838	ID:4	App: Send seqn 16
+08:36.901	ID:6	my_collect source|04:00 hop|0
+08:37.034	ID:1	my_collect source|04:00 hop|1
+08:37.037	ID:1	App: Recv from 04:00 seqn 16 hops 1
+08:37.084	ID:3	App: Send seqn 16
+08:37.208	ID:10	my_collect source|03:00 hop|0
+08:37.302	ID:7	my_collect source|03:00 hop|1
+08:37.409	ID:1	my_collect source|03:00 hop|2
+08:37.412	ID:1	App: Recv from 03:00 seqn 16 hops 2
+08:38.486	ID:5	App: Send seqn 16
+08:38.533	ID:1	my_collect source|05:00 hop|0
+08:38.536	ID:1	App: Recv from 05:00 seqn 16 hops 0
+08:42.046	ID:2	App: Send seqn 16
+08:42.160	ID:1	my_collect source|02:00 hop|0
+08:42.163	ID:1	App: Recv from 02:00 seqn 16 hops 0
+09:02.087	ID:5	App: Send seqn 17
+09:02.158	ID:1	my_collect source|05:00 hop|0
+09:02.161	ID:1	App: Recv from 05:00 seqn 17 hops 0
+09:02.219	ID:8	App: Send seqn 17
+09:02.302	ID:3	my_collect source|08:00 hop|0
+09:02.332	ID:10	my_collect source|08:00 hop|1
+09:02.429	ID:7	my_collect source|08:00 hop|2
+09:02.534	ID:1	my_collect source|08:00 hop|3
+09:02.537	ID:1	App: Recv from 08:00 seqn 17 hops 3
+09:02.866	ID:2	App: Send seqn 17
+09:02.908	ID:1	my_collect source|02:00 hop|0
+09:02.911	ID:1	App: Recv from 02:00 seqn 17 hops 0
+09:03.838	ID:9	App: Send seqn 17
+09:03.959	ID:10	my_collect source|09:00 hop|0
+09:04.054	ID:7	my_collect source|09:00 hop|1
+09:04.158	ID:1	my_collect source|09:00 hop|2
+09:04.161	ID:1	App: Recv from 09:00 seqn 17 hops 2
+09:05.663	ID:1	my_collect: sending beacon: seqn 2 metric 0
+09:05.744	ID:5	my_collect: recv beacon from 01:00 seqn 2 metric 0 rssi -74
+09:05.746	ID:5	Sequence number flush happened! 
+09:05.766	ID:2	my_collect: recv beacon from 01:00 seqn 2 metric 0 rssi -63
+09:05.768	ID:2	Sequence number flush happened! 
+09:05.779	ID:6	my_collect: recv beacon from 01:00 seqn 2 metric 0 rssi -44
+09:05.782	ID:6	Sequence number flush happened! 
+09:05.807	ID:7	my_collect: recv beacon from 01:00 seqn 2 metric 0 rssi -39
+09:05.809	ID:7	Sequence number flush happened! 
+09:06.409	ID:5	my_collect: sending beacon: seqn 2 metric 1
+09:06.431	ID:7	my_collect: recv beacon from 05:00 seqn 2 metric 1 rssi -80
+09:06.436	ID:7	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+09:06.515	ID:2	my_collect: recv beacon from 05:00 seqn 2 metric 1 rssi -23
+09:06.521	ID:2	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+09:06.532	ID:2	my_collect: sending beacon: seqn 2 metric 1
+09:06.620	ID:5	my_collect: recv beacon from 02:00 seqn 2 metric 1 rssi -23
+09:06.626	ID:5	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+09:06.656	ID:6	my_collect: recv beacon from 02:00 seqn 2 metric 1 rssi -81
+09:06.662	ID:6	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+09:06.672	ID:6	my_collect: sending beacon: seqn 2 metric 1
+09:06.681	ID:7	my_collect: recv beacon from 02:00 seqn 2 metric 1 rssi -73
+09:06.686	ID:7	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+09:06.690	ID:7	my_collect: sending beacon: seqn 2 metric 1
+09:06.751	ID:4	my_collect: recv beacon from 06:00 seqn 2 metric 1 rssi -62
+09:06.757	ID:4	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+09:06.765	ID:2	my_collect: recv beacon from 06:00 seqn 2 metric 1 rssi -81
+09:06.771	ID:2	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+09:07.368	ID:5	my_collect: recv beacon from 07:00 seqn 2 metric 1 rssi -80
+09:07.374	ID:5	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+09:07.390	ID:2	my_collect: recv beacon from 07:00 seqn 2 metric 1 rssi -73
+09:07.396	ID:2	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+09:07.403	ID:6	my_collect: recv beacon from 07:00 seqn 2 metric 1 rssi -73
+09:07.409	ID:6	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+09:07.461	ID:10	my_collect: recv beacon from 07:00 seqn 2 metric 1 rssi -80
+09:07.467	ID:10	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+09:07.505	ID:6	App: Send seqn 17
+09:07.533	ID:1	my_collect source|06:00 hop|0
+09:07.536	ID:1	App: Recv from 06:00 seqn 17 hops 0
+09:09.328	ID:10	App: Send seqn 17
+09:09.404	ID:3	App: Send seqn 17
+09:09.427	ID:7	my_collect source|0a:00 hop|0
+09:09.709	ID:10	my_collect source|03:00 hop|0
+09:09.784	ID:1	my_collect source|0a:00 hop|1
+09:09.787	ID:1	App: Recv from 0a:00 seqn 17 hops 1
+09:09.928	ID:7	my_collect source|03:00 hop|1
+09:10.032	ID:1	my_collect source|03:00 hop|2
+09:10.035	ID:1	App: Recv from 03:00 seqn 17 hops 2
+09:14.064	ID:4	App: Send seqn 17
+09:14.152	ID:6	my_collect source|04:00 hop|0
+09:14.284	ID:1	my_collect source|04:00 hop|1
+09:14.287	ID:1	App: Recv from 04:00 seqn 17 hops 1
+09:14.868	ID:7	App: Send seqn 17
+09:14.907	ID:1	my_collect source|07:00 hop|0
+09:14.910	ID:1	App: Recv from 07:00 seqn 17 hops 0
+09:32.029	ID:6	App: Send seqn 18
+09:32.159	ID:1	my_collect source|06:00 hop|0
+09:32.162	ID:1	App: Recv from 06:00 seqn 18 hops 0
+09:32.320	ID:8	App: Send seqn 18
+09:32.427	ID:3	my_collect source|08:00 hop|0
+09:32.457	ID:10	my_collect source|08:00 hop|1
+09:32.552	ID:7	my_collect source|08:00 hop|2
+09:32.659	ID:1	my_collect source|08:00 hop|3
+09:32.662	ID:1	App: Recv from 08:00 seqn 18 hops 3
+09:33.499	ID:10	App: Send seqn 18
+09:33.553	ID:7	my_collect source|0a:00 hop|0
+09:33.659	ID:1	my_collect source|0a:00 hop|1
+09:33.662	ID:1	App: Recv from 0a:00 seqn 18 hops 1
+09:34.253	ID:9	App: Send seqn 18
+09:34.333	ID:10	my_collect source|09:00 hop|0
+09:34.428	ID:7	my_collect source|09:00 hop|1
+09:34.534	ID:1	my_collect source|09:00 hop|2
+09:34.537	ID:1	App: Recv from 09:00 seqn 18 hops 2
+09:36.822	ID:5	App: Send seqn 18
+09:36.909	ID:1	my_collect source|05:00 hop|0
+09:36.912	ID:1	App: Recv from 05:00 seqn 18 hops 0
+09:40.890	ID:2	App: Send seqn 18
+09:40.908	ID:1	my_collect source|02:00 hop|0
+09:40.911	ID:1	App: Recv from 02:00 seqn 18 hops 0
+09:41.759	ID:4	App: Send seqn 18
+09:41.778	ID:6	my_collect source|04:00 hop|0
+09:41.908	ID:1	my_collect source|04:00 hop|1
+09:41.911	ID:1	App: Recv from 04:00 seqn 18 hops 1
+09:42.032	ID:7	App: Send seqn 18
+09:42.160	ID:1	my_collect source|07:00 hop|0
+09:42.162	ID:1	App: Recv from 07:00 seqn 18 hops 0
+09:45.928	ID:3	App: Send seqn 18
+09:45.958	ID:10	my_collect source|03:00 hop|0
+09:46.053	ID:7	my_collect source|03:00 hop|1
+09:46.159	ID:1	my_collect source|03:00 hop|2
+09:46.162	ID:1	App: Recv from 03:00 seqn 18 hops 2
+10:00.390	ID:8	App: Send seqn 19
+10:00.425	ID:3	my_collect source|08:00 hop|0
+10:00.458	ID:10	my_collect source|08:00 hop|1
+10:00.552	ID:7	my_collect source|08:00 hop|2
+10:00.659	ID:1	my_collect source|08:00 hop|3
+10:00.662	ID:1	App: Recv from 08:00 seqn 19 hops 3
+10:00.835	ID:2	App: Send seqn 19
+10:00.908	ID:1	my_collect source|02:00 hop|0
+10:00.911	ID:1	App: Recv from 02:00 seqn 19 hops 0
+10:01.663	ID:10	App: Send seqn 19
+10:01.803	ID:7	my_collect source|0a:00 hop|0
+10:01.909	ID:1	my_collect source|0a:00 hop|1
+10:01.912	ID:1	App: Recv from 0a:00 seqn 19 hops 1
+10:02.373	ID:3	App: Send seqn 19
+10:02.458	ID:10	my_collect source|03:00 hop|0
+10:02.553	ID:7	my_collect source|03:00 hop|1
+10:02.659	ID:1	my_collect source|03:00 hop|2
+10:02.662	ID:1	App: Recv from 03:00 seqn 19 hops 2
+10:03.474	ID:6	App: Send seqn 19
+10:03.533	ID:1	my_collect source|06:00 hop|0
+10:03.536	ID:1	App: Recv from 06:00 seqn 19 hops 0
+10:03.549	ID:4	App: Send seqn 19
+10:03.653	ID:6	my_collect source|04:00 hop|0
+10:03.784	ID:1	my_collect source|04:00 hop|1
+10:03.786	ID:1	App: Recv from 04:00 seqn 19 hops 1
+10:04.446	ID:7	App: Send seqn 19
+10:04.533	ID:1	my_collect source|07:00 hop|0
+10:04.536	ID:1	App: Recv from 07:00 seqn 19 hops 0
+10:05.663	ID:1	my_collect: sending beacon: seqn 3 metric 0
+10:05.744	ID:5	my_collect: recv beacon from 01:00 seqn 3 metric 0 rssi -74
+10:05.746	ID:5	Sequence number flush happened! 
+10:05.766	ID:2	my_collect: recv beacon from 01:00 seqn 3 metric 0 rssi -63
+10:05.768	ID:2	Sequence number flush happened! 
+10:05.780	ID:6	my_collect: recv beacon from 01:00 seqn 3 metric 0 rssi -44
+10:05.782	ID:6	Sequence number flush happened! 
+10:05.807	ID:7	my_collect: recv beacon from 01:00 seqn 3 metric 0 rssi -39
+10:05.809	ID:7	Sequence number flush happened! 
+10:06.126	ID:2	my_collect: sending beacon: seqn 3 metric 1
+10:06.155	ID:6	my_collect: recv beacon from 02:00 seqn 3 metric 1 rssi -81
+10:06.161	ID:6	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+10:06.179	ID:7	my_collect: recv beacon from 02:00 seqn 3 metric 1 rssi -73
+10:06.185	ID:7	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+10:06.245	ID:5	my_collect: recv beacon from 02:00 seqn 3 metric 1 rssi -23
+10:06.251	ID:5	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+10:06.265	ID:6	my_collect: sending beacon: seqn 3 metric 1
+10:06.306	ID:7	my_collect: recv beacon from 06:00 seqn 3 metric 1 rssi -73
+10:06.311	ID:7	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+10:06.377	ID:4	my_collect: recv beacon from 06:00 seqn 3 metric 1 rssi -62
+10:06.383	ID:4	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+10:06.391	ID:2	my_collect: recv beacon from 06:00 seqn 3 metric 1 rssi -81
+10:06.396	ID:2	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+10:06.683	ID:5	my_collect: sending beacon: seqn 3 metric 1
+10:06.705	ID:7	my_collect: sending beacon: seqn 3 metric 1
+10:06.764	ID:2	my_collect: recv beacon from 05:00 seqn 3 metric 1 rssi -23
+10:06.770	ID:2	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+10:06.806	ID:7	my_collect: recv beacon from 05:00 seqn 3 metric 1 rssi -80
+10:06.812	ID:7	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+10:07.085	ID:10	my_collect: recv beacon from 07:00 seqn 3 metric 1 rssi -80
+10:07.091	ID:10	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+10:07.118	ID:5	my_collect: recv beacon from 07:00 seqn 3 metric 1 rssi -80
+10:07.124	ID:5	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+10:07.140	ID:2	my_collect: recv beacon from 07:00 seqn 3 metric 1 rssi -73
+10:07.146	ID:2	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+10:07.153	ID:6	my_collect: recv beacon from 07:00 seqn 3 metric 1 rssi -73
+10:07.159	ID:6	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+10:11.704	ID:5	App: Send seqn 19
+10:11.785	ID:1	my_collect source|05:00 hop|0
+10:11.788	ID:1	App: Recv from 05:00 seqn 19 hops 0
+10:13.385	ID:9	App: Send seqn 19
+10:13.458	ID:10	my_collect source|09:00 hop|0
+10:13.553	ID:7	my_collect source|09:00 hop|1
+10:13.659	ID:1	my_collect source|09:00 hop|2
+10:13.662	ID:1	App: Recv from 09:00 seqn 19 hops 2
+10:31.054	ID:8	App: Send seqn 20
+10:31.175	ID:3	my_collect source|08:00 hop|0
+10:31.208	ID:10	my_collect source|08:00 hop|1
+10:31.303	ID:7	my_collect source|08:00 hop|2
+10:31.409	ID:1	my_collect source|08:00 hop|3
+10:31.412	ID:1	App: Recv from 08:00 seqn 20 hops 3
+10:32.626	ID:5	App: Send seqn 20
+10:32.659	ID:1	my_collect source|05:00 hop|0
+10:32.662	ID:1	App: Recv from 05:00 seqn 20 hops 0
+10:34.132	ID:2	App: Send seqn 20
+10:34.158	ID:1	my_collect source|02:00 hop|0
+10:34.161	ID:1	App: Recv from 02:00 seqn 20 hops 0
+10:35.546	ID:10	App: Send seqn 20
+10:35.679	ID:7	my_collect source|0a:00 hop|0
+10:35.783	ID:1	my_collect source|0a:00 hop|1
+10:35.786	ID:1	App: Recv from 0a:00 seqn 20 hops 1
+10:40.556	ID:4	App: Send seqn 20
+10:40.651	ID:6	my_collect source|04:00 hop|0
+10:40.784	ID:1	my_collect source|04:00 hop|1
+10:40.787	ID:1	App: Recv from 04:00 seqn 20 hops 1
+10:43.772	ID:6	App: Send seqn 20
+10:43.862	ID:9	App: Send seqn 20
+10:44.282	ID:1	my_collect source|06:00 hop|0
+10:44.285	ID:1	App: Recv from 06:00 seqn 20 hops 0
+10:44.332	ID:10	my_collect source|09:00 hop|0
+10:44.429	ID:7	my_collect source|09:00 hop|1
+10:44.534	ID:1	my_collect source|09:00 hop|2
+10:44.536	ID:1	App: Recv from 09:00 seqn 20 hops 2
+10:44.935	ID:3	App: Send seqn 20
+10:44.959	ID:10	my_collect source|03:00 hop|0
+10:45.040	ID:7	App: Send seqn 20
+10:45.053	ID:7	my_collect source|03:00 hop|1
+10:45.282	ID:1	my_collect source|07:00 hop|0
+10:45.285	ID:1	App: Recv from 07:00 seqn 20 hops 0
+10:45.408	ID:1	my_collect source|03:00 hop|2
+10:45.411	ID:1	App: Recv from 03:00 seqn 20 hops 2
+11:03.373	ID:6	App: Send seqn 21
+11:03.408	ID:1	my_collect source|06:00 hop|0
+11:03.411	ID:1	App: Recv from 06:00 seqn 21 hops 0
+11:05.663	ID:1	my_collect: sending beacon: seqn 4 metric 0
+11:05.744	ID:5	my_collect: recv beacon from 01:00 seqn 4 metric 0 rssi -74
+11:05.746	ID:5	Sequence number flush happened! 
+11:05.766	ID:2	my_collect: recv beacon from 01:00 seqn 4 metric 0 rssi -63
+11:05.768	ID:2	Sequence number flush happened! 
+11:05.780	ID:6	my_collect: recv beacon from 01:00 seqn 4 metric 0 rssi -44
+11:05.782	ID:6	Sequence number flush happened! 
+11:05.807	ID:9	App: Send seqn 21
+11:05.807	ID:7	my_collect: recv beacon from 01:00 seqn 4 metric 0 rssi -39
+11:05.810	ID:7	Sequence number flush happened! 
+11:05.832	ID:10	my_collect source|09:00 hop|0
+11:05.927	ID:7	my_collect source|09:00 hop|1
+11:06.031	ID:1	my_collect source|09:00 hop|2
+11:06.034	ID:1	App: Recv from 09:00 seqn 21 hops 2
+11:06.175	ID:5	my_collect: sending beacon: seqn 4 metric 1
+11:06.195	ID:6	my_collect: sending beacon: seqn 4 metric 1
+11:06.555	ID:2	my_collect: sending beacon: seqn 4 metric 1
+11:06.596	ID:7	my_collect: sending beacon: seqn 4 metric 1
+11:06.620	ID:5	my_collect: recv beacon from 02:00 seqn 4 metric 1 rssi -23
+11:06.626	ID:5	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+11:06.656	ID:6	my_collect: recv beacon from 02:00 seqn 4 metric 1 rssi -81
+11:06.662	ID:6	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+11:06.681	ID:7	my_collect: recv beacon from 02:00 seqn 4 metric 1 rssi -73
+11:06.686	ID:7	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+11:07.029	ID:6	my_collect: recv beacon from 07:00 seqn 4 metric 1 rssi -73
+11:07.035	ID:6	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+11:07.086	ID:10	my_collect: recv beacon from 07:00 seqn 4 metric 1 rssi -80
+11:07.092	ID:10	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+11:07.119	ID:5	my_collect: recv beacon from 07:00 seqn 4 metric 1 rssi -80
+11:07.125	ID:5	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+11:07.141	ID:2	my_collect: recv beacon from 07:00 seqn 4 metric 1 rssi -73
+11:07.147	ID:2	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+11:09.233	ID:2	App: Send seqn 21
+11:09.283	ID:1	my_collect source|02:00 hop|0
+11:09.286	ID:1	App: Recv from 02:00 seqn 21 hops 0
+11:10.437	ID:8	App: Send seqn 21
+11:10.551	ID:3	my_collect source|08:00 hop|0
+11:10.584	ID:10	my_collect source|08:00 hop|1
+11:10.678	ID:7	my_collect source|08:00 hop|2
+11:10.782	ID:1	my_collect source|08:00 hop|3
+11:10.785	ID:1	App: Recv from 08:00 seqn 21 hops 3
+11:12.408	ID:4	App: Send seqn 21
+11:12.526	ID:6	my_collect source|04:00 hop|0
+11:12.659	ID:1	my_collect source|04:00 hop|1
+11:12.662	ID:1	App: Recv from 04:00 seqn 21 hops 1
+11:12.773	ID:10	App: Send seqn 21
+11:12.803	ID:7	my_collect source|0a:00 hop|0
+11:12.909	ID:1	my_collect source|0a:00 hop|1
+11:12.912	ID:1	App: Recv from 0a:00 seqn 21 hops 1
+11:13.416	ID:5	App: Send seqn 21
+11:13.534	ID:1	my_collect source|05:00 hop|0
+11:13.537	ID:1	App: Recv from 05:00 seqn 21 hops 0
+11:13.671	ID:3	App: Send seqn 21
+11:13.708	ID:10	my_collect source|03:00 hop|0
+11:13.803	ID:7	my_collect source|03:00 hop|1
+11:13.909	ID:1	my_collect source|03:00 hop|2
+11:13.912	ID:1	App: Recv from 03:00 seqn 21 hops 2
+11:14.399	ID:7	App: Send seqn 21
+11:14.534	ID:1	my_collect source|07:00 hop|0
+11:14.537	ID:1	App: Recv from 07:00 seqn 21 hops 0
+11:32.243	ID:7	App: Send seqn 22
+11:32.282	ID:1	my_collect source|07:00 hop|0
+11:32.285	ID:1	App: Recv from 07:00 seqn 22 hops 0
+11:32.846	ID:9	App: Send seqn 22
+11:32.958	ID:10	my_collect source|09:00 hop|0
+11:33.052	ID:7	my_collect source|09:00 hop|1
+11:33.159	ID:1	my_collect source|09:00 hop|2
+11:33.162	ID:1	App: Recv from 09:00 seqn 22 hops 2
+11:33.228	ID:4	App: Send seqn 22
+11:33.275	ID:5	App: Send seqn 22
+11:33.277	ID:6	my_collect source|04:00 hop|0
+11:33.533	ID:1	my_collect source|05:00 hop|0
+11:33.536	ID:1	App: Recv from 05:00 seqn 22 hops 0
+11:33.909	ID:1	my_collect source|04:00 hop|1
+11:33.912	ID:1	App: Recv from 04:00 seqn 22 hops 1
+11:38.107	ID:6	App: Send seqn 22
+11:38.159	ID:1	my_collect source|06:00 hop|0
+11:38.162	ID:1	App: Recv from 06:00 seqn 22 hops 0
+11:39.164	ID:8	App: Send seqn 22
+11:39.301	ID:3	my_collect source|08:00 hop|0
+11:39.334	ID:10	my_collect source|08:00 hop|1
+11:39.428	ID:7	my_collect source|08:00 hop|2
+11:39.532	ID:1	my_collect source|08:00 hop|3
+11:39.535	ID:1	App: Recv from 08:00 seqn 22 hops 3
+11:40.968	ID:2	App: Send seqn 22
+11:41.034	ID:1	my_collect source|02:00 hop|0
+11:41.037	ID:1	App: Recv from 02:00 seqn 22 hops 0
+11:44.468	ID:10	App: Send seqn 22
+11:44.552	ID:7	my_collect source|0a:00 hop|0
+11:44.659	ID:1	my_collect source|0a:00 hop|1
+11:44.662	ID:1	App: Recv from 0a:00 seqn 22 hops 1
+11:45.272	ID:3	App: Send seqn 22
+11:45.333	ID:10	my_collect source|03:00 hop|0
+11:45.427	ID:7	my_collect source|03:00 hop|1
+11:45.534	ID:1	my_collect source|03:00 hop|2
+11:45.537	ID:1	App: Recv from 03:00 seqn 22 hops 2
+12:01.257	ID:10	App: Send seqn 23
+12:01.304	ID:7	my_collect source|0a:00 hop|0
+12:01.408	ID:1	my_collect source|0a:00 hop|1
+12:01.411	ID:1	App: Recv from 0a:00 seqn 23 hops 1
+12:03.842	ID:3	App: Send seqn 23
+12:03.957	ID:10	my_collect source|03:00 hop|0
+12:04.052	ID:7	my_collect source|03:00 hop|1
+12:04.158	ID:1	my_collect source|03:00 hop|2
+12:04.161	ID:1	App: Recv from 03:00 seqn 23 hops 2
+12:05.663	ID:1	my_collect: sending beacon: seqn 5 metric 0
+12:05.744	ID:5	my_collect: recv beacon from 01:00 seqn 5 metric 0 rssi -74
+12:05.746	ID:5	Sequence number flush happened! 
+12:05.766	ID:2	my_collect: recv beacon from 01:00 seqn 5 metric 0 rssi -63
+12:05.768	ID:2	Sequence number flush happened! 
+12:05.780	ID:6	my_collect: recv beacon from 01:00 seqn 5 metric 0 rssi -44
+12:05.782	ID:6	Sequence number flush happened! 
+12:05.807	ID:7	my_collect: recv beacon from 01:00 seqn 5 metric 0 rssi -39
+12:05.809	ID:7	Sequence number flush happened! 
+12:05.854	ID:7	my_collect: sending beacon: seqn 5 metric 1
+12:05.889	ID:2	my_collect: recv beacon from 07:00 seqn 5 metric 1 rssi -73
+12:05.894	ID:2	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+12:05.905	ID:6	my_collect: recv beacon from 07:00 seqn 5 metric 1 rssi -73
+12:05.911	ID:6	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+12:05.960	ID:10	my_collect: recv beacon from 07:00 seqn 5 metric 1 rssi -80
+12:05.966	ID:10	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+12:05.993	ID:5	my_collect: recv beacon from 07:00 seqn 5 metric 1 rssi -80
+12:05.998	ID:5	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+12:06.164	ID:6	my_collect: sending beacon: seqn 5 metric 1
+12:06.253	ID:4	my_collect: recv beacon from 06:00 seqn 5 metric 1 rssi -62
+12:06.259	ID:4	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+12:06.264	ID:2	my_collect: recv beacon from 06:00 seqn 5 metric 1 rssi -81
+12:06.270	ID:2	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+12:06.305	ID:7	my_collect: recv beacon from 06:00 seqn 5 metric 1 rssi -73
+12:06.311	ID:7	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+12:06.329	ID:2	my_collect: sending beacon: seqn 5 metric 1
+12:06.369	ID:5	my_collect: recv beacon from 02:00 seqn 5 metric 1 rssi -23
+12:06.375	ID:5	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+12:06.394	ID:5	my_collect: sending beacon: seqn 5 metric 1
+12:06.402	ID:6	my_collect: recv beacon from 02:00 seqn 5 metric 1 rssi -81
+12:06.408	ID:6	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+12:06.429	ID:7	my_collect: recv beacon from 02:00 seqn 5 metric 1 rssi -73
+12:06.435	ID:7	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+12:06.470	ID:2	App: Send seqn 23
+12:06.515	ID:2	my_collect: recv beacon from 05:00 seqn 5 metric 1 rssi -23
+12:06.521	ID:2	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+12:06.556	ID:7	my_collect: recv beacon from 05:00 seqn 5 metric 1 rssi -80
+12:06.562	ID:7	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+12:07.105	ID:9	App: Send seqn 23
+12:07.209	ID:10	my_collect source|09:00 hop|0
+12:07.304	ID:7	my_collect source|09:00 hop|1
+12:07.408	ID:1	my_collect source|09:00 hop|2
+12:07.411	ID:1	App: Recv from 09:00 seqn 23 hops 2
+12:07.643	ID:4	App: Send seqn 23
+12:07.778	ID:6	my_collect source|04:00 hop|0
+12:07.908	ID:1	my_collect source|04:00 hop|1
+12:07.911	ID:1	App: Recv from 04:00 seqn 23 hops 1
+12:08.784	ID:1	my_collect source|02:00 hop|0
+12:08.787	ID:1	App: Recv from 02:00 seqn 23 hops 0
+12:13.217	ID:6	App: Send seqn 23
+12:13.283	ID:1	my_collect source|06:00 hop|0
+12:13.286	ID:1	App: Recv from 06:00 seqn 23 hops 0
+12:13.509	ID:5	App: Send seqn 23
+12:13.533	ID:1	my_collect source|05:00 hop|0
+12:13.536	ID:1	App: Recv from 05:00 seqn 23 hops 0
+12:14.359	ID:8	App: Send seqn 23
+12:14.425	ID:3	my_collect source|08:00 hop|0
+12:14.438	ID:7	App: Send seqn 23
+12:14.583	ID:10	my_collect source|08:00 hop|1
+12:14.677	ID:7	my_collect source|08:00 hop|2
+12:14.909	ID:1	my_collect source|07:00 hop|0
+12:14.912	ID:1	App: Recv from 07:00 seqn 23 hops 0
+12:15.034	ID:1	my_collect source|08:00 hop|3
+12:15.037	ID:1	App: Recv from 08:00 seqn 23 hops 3
+12:30.648	ID:8	App: Send seqn 24
+12:30.676	ID:3	my_collect source|08:00 hop|0
+12:30.709	ID:10	my_collect source|08:00 hop|1
+12:30.801	ID:7	my_collect source|08:00 hop|2
+12:30.907	ID:1	my_collect source|08:00 hop|3
+12:30.910	ID:1	App: Recv from 08:00 seqn 24 hops 3
+12:31.206	ID:9	App: Send seqn 24
+12:31.334	ID:10	my_collect source|09:00 hop|0
+12:31.428	ID:7	my_collect source|09:00 hop|1
+12:31.532	ID:1	my_collect source|09:00 hop|2
+12:31.535	ID:1	App: Recv from 09:00 seqn 24 hops 2
+12:32.701	ID:6	App: Send seqn 24
+12:32.784	ID:1	my_collect source|06:00 hop|0
+12:32.787	ID:1	App: Recv from 06:00 seqn 24 hops 0
+12:36.006	ID:3	App: Send seqn 24
+12:36.084	ID:10	my_collect source|03:00 hop|0
+12:36.179	ID:7	my_collect source|03:00 hop|1
+12:36.283	ID:1	my_collect source|03:00 hop|2
+12:36.286	ID:1	App: Recv from 03:00 seqn 24 hops 2
+12:36.907	ID:7	App: Send seqn 24
+12:37.034	ID:1	my_collect source|07:00 hop|0
+12:37.037	ID:1	App: Recv from 07:00 seqn 24 hops 0
+12:38.741	ID:2	App: Send seqn 24
+12:38.783	ID:1	my_collect source|02:00 hop|0
+12:38.786	ID:1	App: Recv from 02:00 seqn 24 hops 0
+12:39.103	ID:5	App: Send seqn 24
+12:39.160	ID:1	my_collect source|05:00 hop|0
+12:39.162	ID:1	App: Recv from 05:00 seqn 24 hops 0
+12:41.264	ID:10	App: Send seqn 24
+12:41.302	ID:7	my_collect source|0a:00 hop|0
+12:41.409	ID:1	my_collect source|0a:00 hop|1
+12:41.412	ID:1	App: Recv from 0a:00 seqn 24 hops 1
+12:42.775	ID:4	App: Send seqn 24
+12:42.903	ID:6	my_collect source|04:00 hop|0
+12:43.033	ID:1	my_collect source|04:00 hop|1
+12:43.036	ID:1	App: Recv from 04:00 seqn 24 hops 1
+13:01.252	ID:4	App: Send seqn 25
+13:01.277	ID:6	my_collect source|04:00 hop|0
+13:01.407	ID:1	my_collect source|04:00 hop|1
+13:01.410	ID:1	App: Recv from 04:00 seqn 25 hops 1
+13:01.655	ID:2	App: Send seqn 25
+13:01.783	ID:1	my_collect source|02:00 hop|0
+13:01.786	ID:1	App: Recv from 02:00 seqn 25 hops 0
+13:03.821	ID:7	App: Send seqn 25
+13:03.889	ID:3	App: Send seqn 25
+13:04.034	ID:1	my_collect source|07:00 hop|0
+13:04.037	ID:1	App: Recv from 07:00 seqn 25 hops 0
+13:04.082	ID:10	my_collect source|03:00 hop|0
+13:04.156	ID:8	App: Send seqn 25
+13:04.302	ID:7	my_collect source|03:00 hop|1
+13:05.283	ID:1	my_collect source|03:00 hop|2
+13:05.286	ID:1	App: Recv from 03:00 seqn 25 hops 2
+13:05.663	ID:1	my_collect: sending beacon: seqn 6 metric 0
+13:05.744	ID:5	my_collect: recv beacon from 01:00 seqn 6 metric 0 rssi -74
+13:05.746	ID:5	Sequence number flush happened! 
+13:05.766	ID:2	my_collect: recv beacon from 01:00 seqn 6 metric 0 rssi -63
+13:05.768	ID:2	Sequence number flush happened! 
+13:05.780	ID:6	my_collect: recv beacon from 01:00 seqn 6 metric 0 rssi -44
+13:05.782	ID:6	Sequence number flush happened! 
+13:05.807	ID:7	my_collect: recv beacon from 01:00 seqn 6 metric 0 rssi -39
+13:05.810	ID:7	Sequence number flush happened! 
+13:05.812	ID:6	my_collect: sending beacon: seqn 6 metric 1
+13:05.877	ID:4	my_collect: recv beacon from 06:00 seqn 6 metric 1 rssi -62
+13:05.883	ID:4	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+13:05.891	ID:2	my_collect: recv beacon from 06:00 seqn 6 metric 1 rssi -81
+13:05.897	ID:2	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+13:05.932	ID:7	my_collect: recv beacon from 06:00 seqn 6 metric 1 rssi -73
+13:05.938	ID:7	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+13:06.214	ID:5	my_collect: sending beacon: seqn 6 metric 1
+13:06.265	ID:2	my_collect: recv beacon from 05:00 seqn 6 metric 1 rssi -23
+13:06.271	ID:2	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+13:06.307	ID:7	my_collect: recv beacon from 05:00 seqn 6 metric 1 rssi -80
+13:06.313	ID:7	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+13:06.540	ID:2	my_collect: sending beacon: seqn 6 metric 1
+13:06.580	ID:7	my_collect: sending beacon: seqn 6 metric 1
+13:06.618	ID:5	my_collect: recv beacon from 02:00 seqn 6 metric 1 rssi -23
+13:06.624	ID:5	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+13:06.654	ID:6	my_collect: recv beacon from 02:00 seqn 6 metric 1 rssi -81
+13:06.660	ID:6	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+13:06.681	ID:7	my_collect: recv beacon from 02:00 seqn 6 metric 1 rssi -73
+13:06.687	ID:7	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+13:06.960	ID:10	my_collect: recv beacon from 07:00 seqn 6 metric 1 rssi -80
+13:06.966	ID:10	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+13:06.993	ID:5	my_collect: recv beacon from 07:00 seqn 6 metric 1 rssi -80
+13:06.999	ID:5	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+13:07.015	ID:2	my_collect: recv beacon from 07:00 seqn 6 metric 1 rssi -73
+13:07.021	ID:2	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+13:07.028	ID:6	my_collect: recv beacon from 07:00 seqn 6 metric 1 rssi -73
+13:07.034	ID:6	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+13:07.709	ID:6	App: Send seqn 25
+13:07.784	ID:1	my_collect source|06:00 hop|0
+13:07.787	ID:1	App: Recv from 06:00 seqn 25 hops 0
+13:10.116	ID:10	App: Send seqn 25
+13:10.178	ID:7	my_collect source|0a:00 hop|0
+13:10.284	ID:1	my_collect source|0a:00 hop|1
+13:10.287	ID:1	App: Recv from 0a:00 seqn 25 hops 1
+13:13.276	ID:9	App: Send seqn 25
+13:13.332	ID:10	my_collect source|09:00 hop|0
+13:13.361	ID:5	App: Send seqn 25
+13:14.056	ID:7	my_collect source|09:00 hop|1
+13:14.157	ID:1	my_collect source|09:00 hop|2
+13:14.160	ID:1	App: Recv from 09:00 seqn 25 hops 2
+13:14.533	ID:1	my_collect source|05:00 hop|0
+13:14.536	ID:1	App: Recv from 05:00 seqn 25 hops 0
+13:31.380	ID:6	App: Send seqn 26
+13:31.409	ID:1	my_collect source|06:00 hop|0
+13:31.412	ID:1	App: Recv from 06:00 seqn 26 hops 0
+13:40.197	ID:4	App: Send seqn 26
+13:40.275	ID:6	my_collect source|04:00 hop|0
+13:40.408	ID:1	my_collect source|04:00 hop|1
+13:40.411	ID:1	App: Recv from 04:00 seqn 26 hops 1
+13:41.415	ID:7	App: Send seqn 26
+13:41.508	ID:8	App: Send seqn 26
+13:41.658	ID:1	my_collect source|07:00 hop|0
+13:41.661	ID:1	App: Recv from 07:00 seqn 26 hops 0
+13:41.675	ID:3	my_collect source|08:00 hop|0
+13:41.708	ID:10	my_collect source|08:00 hop|1
+13:41.802	ID:7	my_collect source|08:00 hop|2
+13:41.909	ID:1	my_collect source|08:00 hop|3
+13:41.912	ID:1	App: Recv from 08:00 seqn 26 hops 3
+13:41.936	ID:10	App: Send seqn 26
+13:42.052	ID:7	my_collect source|0a:00 hop|0
+13:42.115	ID:3	App: Send seqn 26
+13:42.265	ID:2	App: Send seqn 26
+13:42.335	ID:10	my_collect source|03:00 hop|0
+13:42.409	ID:1	my_collect source|0a:00 hop|1
+13:42.412	ID:1	App: Recv from 0a:00 seqn 26 hops 1
+13:42.783	ID:1	my_collect source|02:00 hop|0
+13:42.786	ID:1	App: Recv from 02:00 seqn 26 hops 0
+13:42.802	ID:7	my_collect source|03:00 hop|1
+13:42.909	ID:1	my_collect source|03:00 hop|2
+13:42.912	ID:1	App: Recv from 03:00 seqn 26 hops 2
+13:45.579	ID:5	App: Send seqn 26
+13:45.660	ID:1	my_collect source|05:00 hop|0
+13:45.663	ID:1	App: Recv from 05:00 seqn 26 hops 0
+13:45.940	ID:9	App: Send seqn 26
+13:45.958	ID:10	my_collect source|09:00 hop|0
+13:46.053	ID:7	my_collect source|09:00 hop|1
+13:46.159	ID:1	my_collect source|09:00 hop|2
+13:46.162	ID:1	App: Recv from 09:00 seqn 26 hops 2
+14:01.323	ID:9	App: Send seqn 27
+14:01.458	ID:10	my_collect source|09:00 hop|0
+14:01.553	ID:7	my_collect source|09:00 hop|1
+14:01.659	ID:1	my_collect source|09:00 hop|2
+14:01.662	ID:1	App: Recv from 09:00 seqn 27 hops 2
+14:01.795	ID:6	App: Send seqn 27
+14:01.909	ID:1	my_collect source|06:00 hop|0
+14:01.912	ID:1	App: Recv from 06:00 seqn 27 hops 0
+14:04.828	ID:8	App: Send seqn 27
+14:04.924	ID:3	my_collect source|08:00 hop|0
+14:04.957	ID:10	my_collect source|08:00 hop|1
+14:05.052	ID:7	my_collect source|08:00 hop|2
+14:05.159	ID:1	my_collect source|08:00 hop|3
+14:05.162	ID:1	App: Recv from 08:00 seqn 27 hops 3
+14:05.663	ID:1	my_collect: sending beacon: seqn 7 metric 0
+14:05.744	ID:5	my_collect: recv beacon from 01:00 seqn 7 metric 0 rssi -74
+14:05.746	ID:5	Sequence number flush happened! 
+14:05.766	ID:2	my_collect: recv beacon from 01:00 seqn 7 metric 0 rssi -63
+14:05.768	ID:2	Sequence number flush happened! 
+14:05.780	ID:6	my_collect: recv beacon from 01:00 seqn 7 metric 0 rssi -44
+14:05.782	ID:6	Sequence number flush happened! 
+14:05.807	ID:7	my_collect: recv beacon from 01:00 seqn 7 metric 0 rssi -39
+14:05.810	ID:7	Sequence number flush happened! 
+14:05.860	ID:2	my_collect: sending beacon: seqn 7 metric 1
+14:05.901	ID:7	my_collect: sending beacon: seqn 7 metric 1
+14:05.903	ID:6	my_collect: recv beacon from 02:00 seqn 7 metric 1 rssi -81
+14:05.909	ID:6	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+14:05.931	ID:7	my_collect: recv beacon from 02:00 seqn 7 metric 1 rssi -73
+14:05.936	ID:7	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+14:05.994	ID:5	my_collect: recv beacon from 02:00 seqn 7 metric 1 rssi -23
+14:06.000	ID:5	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+14:06.179	ID:6	my_collect: sending beacon: seqn 7 metric 1
+14:06.211	ID:10	my_collect: recv beacon from 07:00 seqn 7 metric 1 rssi -80
+14:06.216	ID:10	SAME METRIC DIFFERENT PARENT ALERT!! nothing happened! (07:00 metric 1 )
+14:06.243	ID:5	my_collect: recv beacon from 07:00 seqn 7 metric 1 rssi -80
+14:06.249	ID:5	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+14:06.253	ID:5	my_collect: sending beacon: seqn 7 metric 1
+14:06.265	ID:2	my_collect: recv beacon from 07:00 seqn 7 metric 1 rssi -73
+14:06.271	ID:2	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+14:06.279	ID:6	my_collect: recv beacon from 07:00 seqn 7 metric 1 rssi -73
+14:06.285	ID:6	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+14:06.390	ID:2	my_collect: recv beacon from 05:00 seqn 7 metric 1 rssi -23
+14:06.396	ID:2	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+14:06.431	ID:7	my_collect: recv beacon from 05:00 seqn 7 metric 1 rssi -80
+14:06.437	ID:7	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+14:06.766	ID:2	my_collect: recv beacon from 06:00 seqn 7 metric 1 rssi -81
+14:06.771	ID:2	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+14:06.807	ID:7	my_collect: recv beacon from 06:00 seqn 7 metric 1 rssi -73
+14:06.813	ID:7	same metric (sibblings) or lower metric (parent) or lower seqn .. nothing happened! 
+14:06.878	ID:4	my_collect: recv beacon from 06:00 seqn 7 metric 1 rssi -62
+14:06.883	ID:4	SAME METRIC DIFFERENT PARENT ALERT!! nothing happened! (06:00 metric 1 )
+14:07.007	ID:2	App: Send seqn 27
+14:07.033	ID:1	my_collect source|02:00 hop|0
+14:07.036	ID:1	App: Recv from 02:00 seqn 27 hops 0
+14:07.960	ID:10	App: Send seqn 27
+14:08.052	ID:7	my_collect source|0a:00 hop|0
+14:08.156	ID:1	my_collect source|0a:00 hop|1
+14:08.159	ID:1	App: Recv from 0a:00 seqn 27 hops 1
+14:08.810	ID:3	App: Send seqn 27
+14:08.834	ID:10	my_collect source|03:00 hop|0
+14:08.928	ID:7	my_collect source|03:00 hop|1
+14:09.032	ID:1	my_collect source|03:00 hop|2
+14:09.035	ID:1	App: Recv from 03:00 seqn 27 hops 2
+14:14.236	ID:4	App: Send seqn 27
+14:14.276	ID:6	my_collect source|04:00 hop|0
+14:14.306	ID:5	App: Send seqn 27
+14:14.659	ID:1	my_collect source|05:00 hop|0
+14:14.662	ID:1	App: Recv from 05:00 seqn 27 hops 0
+14:14.785	ID:1	my_collect source|04:00 hop|1
+14:14.788	ID:1	App: Recv from 04:00 seqn 27 hops 1
+14:15.173	ID:7	App: Send seqn 27
+14:15.284	ID:1	my_collect source|07:00 hop|0
+14:15.287	ID:1	App: Recv from 07:00 seqn 27 hops 0
+14:32.050	ID:9	App: Send seqn 28
+14:32.082	ID:10	my_collect source|09:00 hop|0
+14:32.179	ID:7	my_collect source|09:00 hop|1
+14:32.284	ID:1	my_collect source|09:00 hop|2
+14:32.287	ID:1	App: Recv from 09:00 seqn 28 hops 2
+14:32.905	ID:10	App: Send seqn 28
+14:32.928	ID:7	my_collect source|0a:00 hop|0
+14:33.032	ID:1	my_collect source|0a:00 hop|1
+14:33.035	ID:1	App: Recv from 0a:00 seqn 28 hops 1
+14:36.742	ID:8	App: Send seqn 28
+14:36.801	ID:3	my_collect source|08:00 hop|0
+14:36.834	ID:10	my_collect source|08:00 hop|1
+14:36.928	ID:7	my_collect source|08:00 hop|2
+14:37.032	ID:1	my_collect source|08:00 hop|3
+14:37.035	ID:1	App: Recv from 08:00 seqn 28 hops 3
+14:38.391	ID:7	App: Send seqn 28
+14:38.409	ID:1	my_collect source|07:00 hop|0
+14:38.412	ID:1	App: Recv from 07:00 seqn 28 hops 0
+14:39.178	ID:2	App: Send seqn 28
+14:39.283	ID:1	my_collect source|02:00 hop|0
+14:39.286	ID:1	App: Recv from 02:00 seqn 28 hops 0
+14:40.298	ID:5	App: Send seqn 28
+14:40.409	ID:1	my_collect source|05:00 hop|0
+14:40.412	ID:1	App: Recv from 05:00 seqn 28 hops 0
+14:40.748	ID:6	App: Send seqn 28
+14:40.783	ID:1	my_collect source|06:00 hop|0
+14:40.786	ID:1	App: Recv from 06:00 seqn 28 hops 0
+14:42.600	ID:3	App: Send seqn 28
+14:42.709	ID:10	my_collect source|03:00 hop|0
+14:42.803	ID:7	my_collect source|03:00 hop|1
+14:42.910	ID:1	my_collect source|03:00 hop|2
+14:42.912	ID:1	App: Recv from 03:00 seqn 28 hops 2
+14:45.495	ID:4	App: Send seqn 28
+14:45.527	ID:6	my_collect source|04:00 hop|0
+14:45.658	ID:1	my_collect source|04:00 hop|1
+14:45.661	ID:1	App: Recv from 04:00 seqn 28 hops 1
+15:01.607	ID:3	App: Send seqn 29
+15:01.709	ID:10	my_collect source|03:00 hop|0
+15:01.804	ID:7	my_collect source|03:00 hop|1
+15:01.908	ID:1	my_collect source|03:00 hop|2
+15:01.911	ID:1	App: Recv from 03:00 seqn 29 hops 2
+15:02.245	ID:9	App: Send seqn 29
+15:02.332	ID:10	my_collect source|09:00 hop|0
+15:02.429	ID:7	my_collect source|09:00 hop|1
+15:02.534	ID:1	my_collect source|09:00 hop|2
+15:02.536	ID:1	App: Recv from 09:00 seqn 29 hops 2
+15:02.618	ID:7	App: Send seqn 29
+15:02.657	ID:1	my_collect source|07:00 hop|0
+15:02.660	ID:1	App: Recv from 07:00 seqn 29 hops 0

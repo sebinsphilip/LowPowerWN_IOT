@@ -165,7 +165,7 @@ Discarded input sections
  .text.send_beacon
                 0x0000000000000000       0x4e obj_sky/my_collect.o
  .text.beacon_timer_cb
-                0x0000000000000000       0x32 obj_sky/my_collect.o
+                0x0000000000000000       0x40 obj_sky/my_collect.o
  .text.beacon_forward_timer_cb
                 0x0000000000000000        0x6 obj_sky/my_collect.o
  .text.my_collect_send

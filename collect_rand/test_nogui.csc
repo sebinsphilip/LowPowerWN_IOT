@@ -299,6 +299,15 @@
     <location_y>1</location_y>
   </plugin>
   <plugin>
+    PowerTracker
+    <width>400</width>
+    <z>-1</z>
+    <height>155</height>
+    <location_x>132</location_x>
+    <location_y>152</location_y>
+    <minimized>true</minimized>
+  </plugin>
+  <plugin>
     org.contikios.cooja.plugins.ScriptRunner
     <plugin_config>
       <script>SIM_SETTLING_TIME = 1000
