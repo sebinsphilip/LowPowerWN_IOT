@@ -6,6 +6,7 @@
 #include "net/rime/rime.h"
 #include "net/netstack.h"
 #include "core/net/linkaddr.h"
+#include "core/sys/clock.h"
 /*---------------------------------------------------------------------------*/
 #define EPOCH_DURATION (30 * CLOCK_SECOND)  // collect every minute
 /*---------------------------------------------------------------------------*/
@@ -33,6 +34,8 @@ struct sched_collect_conn {
   const struct sched_collect_callbacks* callbacks;
   linkaddr_t parent;
   struct ctimer beacon_timer;
+  struct ctimer sync_timer;
+  struct ctimer radio_timer;
   uint16_t metric;
   uint16_t beacon_seqn;
   // you can add other useful variables to the object
