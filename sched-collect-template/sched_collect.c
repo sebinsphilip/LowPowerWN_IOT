@@ -5,23 +5,30 @@
 #include "leds.h"
 #include "net/netstack.h"
 #include <stdio.h>
+#include <stdlib.h>
 #include "core/net/linkaddr.h"
 #include "node-id.h"
 #include "sched_collect.h"
 /*---------------------------------------------------------------------------*/
-#define RSSI_THRESHOLD -93 // filter bad links
+#define RSSI_THRESHOLD -91 // filter bad links
 /*---------------------------------------------------------------------------*/
 #define BEACON_FORWARD_DELAY (random_rand() % CLOCK_SECOND)
 //#define BEACON_FORWARD_DELAY ( CLOCK_SECOND)
 /*---------------------------------------------------------------------------*/
 #define POSTPROCESSING_DELAY 10
 #define PREPROCESSING_DELAY 16
-#define MAX_UNICST_PROCESSING_DELAY ((MAX_HOPS-1)*6)
-//#define MAX_UNICST_PROCESSING_DELAY ((MAX_HOPS)*6)
+//#define MAX_UNICST_PROCESSING_DELAY ((MAX_HOPS-1)*6)
+#define MAX_UNICST_PROCESSING_DELAY ((MAX_HOPS)*6)
 #define COLLECTION_SEQUENCE_DELAY (node_id-2)* MAX_UNICST_PROCESSING_DELAY
 #define RADIO_TURN_OFF_DELAY (MAX_NODES * MAX_UNICST_PROCESSING_DELAY + 200)
-#define RADIO_TURN_ON_DELAY (EPOCH_DURATION - ((MAX_HOPS)*CLOCK_SECOND))
-//#define DATACOLLECTION_GREEN_START_DELAY 
+//#define RADIO_TURN_ON_DELAY (EPOCH_DURATION - ((MAX_HOPS)*CLOCK_SECOND))
+#define BLUE_LED_GUARD 200 // This can be zero as-well => even-though some final beacon packets might disappear (less DC)
+#define DATACOLLECTION_COMMON_GREEN_START_DELAY  (((MAX_HOPS-1)*CLOCK_SECOND + BLUE_LED_GUARD) - bc_recv_delay)
+//#define DATACOLLECTION_COMMON_GREEN_START_DELAY  ((MAX_HOPS*CLOCK_SECOND) - bc_recv_delay)
+//#define DATACOLLECTION_COMMON_GREEN_START_DELAY  ((MAX_HOPS*CLOCK_SECOND) - conn->received_packet_from_parent_delay)
+#define GUARD_TIME 1000
+#define RADIO_TURN_ON_DELAY (EPOCH_DURATION - (RADIO_TURN_OFF_DELAY + DATACOLLECTION_COMMON_GREEN_START_DELAY + GUARD_TIME))
+
 /*---------------------------------------------------------------------------*/
 /* Callback function declarations */
 void bc_recv(struct broadcast_conn *conn, const linkaddr_t *sender);
@@ -115,8 +122,7 @@ sched_collect_send(struct sched_collect_conn *conn, uint8_t *data, uint8_t len)
    * time window. If the packet cannot be stored, e.g., because there is
    * a pending packet to be sent, return zero. Otherwise, return non-zero
    * to report operation success. */
-  
-  int ret;
+
 /*
   if (linkaddr_cmp(&conn->parent, &linkaddr_null))
     return 0; // no parent
@@ -164,18 +170,18 @@ send_beacon(struct sched_collect_conn* conn)
   }
   else
   {
-    printf ("EPOCH START: %u\n", bc_recv_ts_t1 - bc_recv_delay);
+    printf ("EPOCH START: %u\n", (uint16_t)(bc_recv_ts_t1 - conn->received_packet_from_parent_delay));
     bc_recv_ts_t2 = clock_time();
-    printf("sched_collect:bc_recv_ts_t1:%u\n",bc_recv_ts_t1);
-    printf ("sched_collect:bc_recv_ts_t2:%u\n",bc_recv_ts_t2);
-    beacon.delay=(bc_recv_ts_t2 - bc_recv_ts_t1) + bc_recv_delay ;
+    printf("sched_collect:bc_recv_ts_t1:%u\n", (uint16_t)bc_recv_ts_t1);
+    printf ("sched_collect:bc_recv_ts_t2:%u\n", (uint16_t)bc_recv_ts_t2);
+    beacon.delay=(bc_recv_ts_t2 - bc_recv_ts_t1) + conn->received_packet_from_parent_delay ;
   }
   
 
   packetbuf_clear();
   packetbuf_copyfrom(&beacon, sizeof(beacon));
   printf("sched_collect: sending beacon: seqn %d metric %d delay:%u\n",
-    conn->beacon_seqn, conn->metric, beacon.delay);
+    conn->beacon_seqn, conn->metric, (uint16_t)beacon.delay);
   //bc_recv_ts_t2 = clock_time();
   //printf ("sched_collect:bc_recv_ts_t3:%u\n",bc_recv_ts_t2);
   broadcast_send(&conn->bc);
@@ -187,14 +193,18 @@ send_beacon(struct sched_collect_conn* conn)
 void beacon_forward_timer_cb (void* ptr)
 {
   struct sched_collect_conn* conn = (struct sched_collect_conn* ) ptr;
-  leds_on(LEDS_BLUE);
+  printf ("Here LEDS BLUE!!\n");
   send_beacon (conn);
+  leds_on(LEDS_BLUE);
+  ctimer_stop(&conn->beacon_timer);
 }
 
 void turn_radio_on_cb (void *ptr)
 {
+  struct sched_collect_conn* conn = (struct sched_collect_conn* ) ptr;
   NETSTACK_MAC.on ();
   printf ("Turned back on!!\n");
+  ctimer_stop (&conn->radio_timer);
 }
  
 
@@ -238,6 +248,7 @@ void datacollection_send_unicast_cb (void* ptr)
   ret = unicast_send (&conn->uc, &conn->parent);
   flag_buffer_full = false;
   buffer_length = 0;
+  ctimer_stop (&conn->sync_timer);
   //ctimer_set(&conn->radio_timer, RADIO_TURN_OFF_DELAY - COLLECTION_SEQUENCE_DELAY,
  //   turn_radio_off_cb, (void*)conn);
 }
@@ -354,22 +365,37 @@ bc_recv(struct broadcast_conn *bc_conn, const linkaddr_t *sender)
 
   if (flag_propogate)
   {
-    bc_recv_ts_tforward = BEACON_FORWARD_DELAY - (PREPROCESSING_DELAY + POSTPROCESSING_DELAY);
+    bc_recv_ts_tforward = BEACON_FORWARD_DELAY;
+    if (bc_recv_ts_tforward < (PREPROCESSING_DELAY + POSTPROCESSING_DELAY))
+    {
+      printf ("After negation !! %d\n",bc_recv_ts_tforward);
+      bc_recv_ts_tforward = 0;
+    }
+    else
+    {
+      bc_recv_ts_tforward -= (PREPROCESSING_DELAY + POSTPROCESSING_DELAY);
+    }
+    printf ("Here inside flag propogate !! delay:%d\n", bc_recv_ts_tforward);
     //temp = clock_time ();
     //printf("sched_collect:difference:%u\n", temp-bc_recv_ts_t1_temp);
+    conn->received_packet_from_parent_delay =  beacon.delay;
+    bc_recv_delay = beacon.delay;
     ctimer_set(&conn->beacon_timer, bc_recv_ts_tforward, beacon_forward_timer_cb, (void*) conn);
-    if (!flag_datacollection_cb)
-    {
+    //if (!flag_datacollection_cb)
+    //{
+      
       //data collection (green led) timer
-      ctimer_set(&conn->sync_timer, ((MAX_HOPS-1)*CLOCK_SECOND) - beacon.delay,
+      printf ("Here inside flag_datacollection_cb !!");
+      ctimer_set(&conn->sync_timer, DATACOLLECTION_COMMON_GREEN_START_DELAY,
        datacollection_green_start_cb, (void*) conn);
-      flag_datacollection_cb = true;
-    }
+      //flag_datacollection_cb = true;
+    //}
     conn->metric = beacon.metric + 1;
     conn->beacon_seqn = beacon.seqn;
     conn->parent.u8[0] = sender->u8[0];
-    conn->parent.u8[1] = sender->u8[1]; 
-    bc_recv_delay = beacon.delay;
+    conn->parent.u8[1] = sender->u8[1];
+    
+    //bc_recv_delay = beacon.delay;
     bc_recv_ts_t1 = bc_recv_ts_t1_temp;
     rssi = rssi_temp;
   }

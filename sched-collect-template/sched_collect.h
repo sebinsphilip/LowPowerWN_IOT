@@ -16,7 +16,7 @@
 #define MAX_NODES 35
 #else
 /* Cooja experiments with Tmote Sky platform */
-#define MAX_HOPS 3
+#define MAX_HOPS 4
 #define MAX_NODES 9
 #endif
 /*---------------------------------------------------------------------------*/
@@ -38,6 +38,7 @@ struct sched_collect_conn {
   struct ctimer radio_timer;
   uint16_t metric;
   uint16_t beacon_seqn;
+  uint16_t received_packet_from_parent_delay;
   // you can add other useful variables to the object
 };
 /*---------------------------------------------------------------------------*/
