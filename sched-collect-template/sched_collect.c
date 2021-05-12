@@ -20,14 +20,20 @@
 //#define MAX_UNICST_PROCESSING_DELAY ((MAX_HOPS-1)*6)
 #define MAX_UNICST_PROCESSING_DELAY ((MAX_HOPS)*6)
 #define COLLECTION_SEQUENCE_DELAY (node_id-2)* MAX_UNICST_PROCESSING_DELAY
-#define RADIO_TURN_OFF_DELAY (MAX_NODES * MAX_UNICST_PROCESSING_DELAY + 200)
-//#define RADIO_TURN_ON_DELAY (EPOCH_DURATION - ((MAX_HOPS)*CLOCK_SECOND))
+//#define RADIO_TURN_OFF_DELAY (MAX_NODES * MAX_UNICST_PROCESSING_DELAY + 200)
+#define GREEN_LED_GUARD 200
+#define RADIO_TURN_OFF_DELAY (MAX_NODES * MAX_UNICST_PROCESSING_DELAY +GREEN_LED_GUARD)
+#define RADIO_TURN_ON_DELAY (EPOCH_DURATION - ((MAX_HOPS)*CLOCK_SECOND)) + 350
 #define BLUE_LED_GUARD 200 // This can be zero as-well => even-though some final beacon packets might disappear (less DC)
-#define DATACOLLECTION_COMMON_GREEN_START_DELAY  (((MAX_HOPS-1)*CLOCK_SECOND + BLUE_LED_GUARD) - bc_recv_delay)
+//#define DATACOLLECTION_COMMON_GREEN_START_DELAY  (((MAX_HOPS-1)*CLOCK_SECOND + BLUE_LED_GUARD) - bc_recv_delay)
+#define DATACOLLECTION_COMMON_GREEN_START_DELAY  (((MAX_HOPS-1)*CLOCK_SECOND + BLUE_LED_GUARD) - bc_recv_delay) - bc_recv_metric
+
+
 //#define DATACOLLECTION_COMMON_GREEN_START_DELAY  ((MAX_HOPS*CLOCK_SECOND) - bc_recv_delay)
 //#define DATACOLLECTION_COMMON_GREEN_START_DELAY  ((MAX_HOPS*CLOCK_SECOND) - conn->received_packet_from_parent_delay)
-#define GUARD_TIME 1000
-#define RADIO_TURN_ON_DELAY (EPOCH_DURATION - (RADIO_TURN_OFF_DELAY + DATACOLLECTION_COMMON_GREEN_START_DELAY + GUARD_TIME))
+//#define GUARD_TIME 1000
+//#define GUARD_TIME 600
+//#define RADIO_TURN_ON_DELAY (EPOCH_DURATION - (RADIO_TURN_OFF_DELAY + DATACOLLECTION_COMMON_GREEN_START_DELAY + GUARD_TIME))
 
 /*---------------------------------------------------------------------------*/
 /* Callback function declarations */
@@ -41,7 +47,7 @@ static uint8_t *buffer;
 static int buffer_length;
 static bool flag_buffer_full, flag_datacollection_cb;
 static int16_t rssi;
-
+static uint16_t bc_recv_metric;
 typedef struct {
   uint16_t seqn;
 }
@@ -380,6 +386,7 @@ bc_recv(struct broadcast_conn *bc_conn, const linkaddr_t *sender)
     //printf("sched_collect:difference:%u\n", temp-bc_recv_ts_t1_temp);
     conn->received_packet_from_parent_delay =  beacon.delay;
     bc_recv_delay = beacon.delay;
+    bc_recv_metric = beacon.metric * 20;
     ctimer_set(&conn->beacon_timer, bc_recv_ts_tforward, beacon_forward_timer_cb, (void*) conn);
     //if (!flag_datacollection_cb)
     //{
