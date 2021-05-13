@@ -21,9 +21,15 @@
 #define MAX_UNICST_PROCESSING_DELAY ((MAX_HOPS)*6)
 #define COLLECTION_SEQUENCE_DELAY (node_id-2)* MAX_UNICST_PROCESSING_DELAY
 //#define RADIO_TURN_OFF_DELAY (MAX_NODES * MAX_UNICST_PROCESSING_DELAY + 200)
+
+//#define GREEN_LED_GUARD 1000
 #define GREEN_LED_GUARD 200
 #define RADIO_TURN_OFF_DELAY (MAX_NODES * MAX_UNICST_PROCESSING_DELAY +GREEN_LED_GUARD)
-#define RADIO_TURN_ON_DELAY (EPOCH_DURATION - ((MAX_HOPS)*CLOCK_SECOND)) + 350
+
+
+#define GUARD_TIME -1300 //testbed
+//#define GUARD_TIME 350 //cooja
+#define RADIO_TURN_ON_DELAY (EPOCH_DURATION - ((MAX_HOPS)*CLOCK_SECOND)) + GUARD_TIME
 #define BLUE_LED_GUARD 200 // This can be zero as-well => even-though some final beacon packets might disappear (less DC)
 //#define DATACOLLECTION_COMMON_GREEN_START_DELAY  (((MAX_HOPS-1)*CLOCK_SECOND + BLUE_LED_GUARD) - bc_recv_delay)
 #define DATACOLLECTION_COMMON_GREEN_START_DELAY  (((MAX_HOPS-1)*CLOCK_SECOND + BLUE_LED_GUARD) - bc_recv_delay) - bc_recv_metric
@@ -54,24 +60,6 @@ typedef struct {
 __attribute__((packed))
 test_msg_t;
 
-
-/*---------------------------------------------------------------------------*/
-PROCESS(sink_process, "Sink process");
-PROCESS(node_process, "Node process");
-/*---------------------------------------------------------------------------*/
-PROCESS_THREAD(sink_process, ev, data)
-{
-  PROCESS_BEGIN();
-  // periodically transmit the synchronization beacon
-  PROCESS_END();
-}
-/*---------------------------------------------------------------------------*/
-PROCESS_THREAD(node_process, ev, data)
-{
-  PROCESS_BEGIN();
-  // manage the phases of each epoch
-  PROCESS_END();
-}
 /*---------------------------------------------------------------------------*/
 /* Header structure for data packets */
 struct collect_header {
@@ -88,6 +76,14 @@ struct unicast_callbacks uc_cb = {
   .recv = uc_recv,
   .sent = NULL
 };
+/*---------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------*/
+/* Routing and synchronization beacons */
+struct beacon_msg { // Beacon message structure
+  uint16_t seqn;
+  uint16_t metric;
+  clock_time_t delay; // embed the transmission delay to help nodes synchronize
+} __attribute__((packed));
 /*---------------------------------------------------------------------------*/
 void
 sched_collect_open(struct sched_collect_conn* conn, uint16_t channels,
@@ -155,14 +151,7 @@ sched_collect_send(struct sched_collect_conn *conn, uint8_t *data, uint8_t len)
   
   return 1; 
 }
-/*---------------------------------------------------------------------------*/
-/* Routing and synchronization beacons */
-struct beacon_msg { // Beacon message structure
-  uint16_t seqn;
-  uint16_t metric;
-  clock_time_t delay; // embed the transmission delay to help nodes synchronize
-} __attribute__((packed));
-/*---------------------------------------------------------------------------*/
+
 /*---------------------------------------------------------------------------*/
 /* Send beacon using the current seqn and metric */
 void
