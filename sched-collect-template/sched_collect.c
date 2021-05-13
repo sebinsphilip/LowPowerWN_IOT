@@ -12,8 +12,11 @@
 /*---------------------------------------------------------------------------*/
 #define RSSI_THRESHOLD -91 // filter bad links
 /*---------------------------------------------------------------------------*/
-#define BEACON_FORWARD_DELAY (random_rand() % CLOCK_SECOND)
-//#define BEACON_FORWARD_DELAY ( CLOCK_SECOND)
+
+//#define DELAY_CEIL (CLOCK_SECOND/2)
+#define DELAY_CEIL 350
+#define BEACON_FORWARD_DELAY (random_rand() % DELAY_CEIL)
+
 /*---------------------------------------------------------------------------*/
 #define POSTPROCESSING_DELAY 10
 #define PREPROCESSING_DELAY 16
@@ -27,12 +30,16 @@
 #define RADIO_TURN_OFF_DELAY (MAX_NODES * MAX_UNICST_PROCESSING_DELAY +GREEN_LED_GUARD)
 
 
-#define GUARD_TIME -1300 //testbed
+//#define GUARD_TIME -1300 //testbed
 //#define GUARD_TIME 350 //cooja
-#define RADIO_TURN_ON_DELAY (EPOCH_DURATION - ((MAX_HOPS)*CLOCK_SECOND)) + GUARD_TIME
+//#define RADIO_TURN_ON_DELAY (EPOCH_DURATION - ((MAX_HOPS)*DELAY_CEIL)) + GUARD_TIME
+
+
+
+
 #define BLUE_LED_GUARD 200 // This can be zero as-well => even-though some final beacon packets might disappear (less DC)
 //#define DATACOLLECTION_COMMON_GREEN_START_DELAY  (((MAX_HOPS-1)*CLOCK_SECOND + BLUE_LED_GUARD) - bc_recv_delay)
-#define DATACOLLECTION_COMMON_GREEN_START_DELAY  (((MAX_HOPS-1)*CLOCK_SECOND + BLUE_LED_GUARD) - bc_recv_delay) - bc_recv_metric
+#define DATACOLLECTION_COMMON_GREEN_START_DELAY  (((MAX_HOPS-1)*DELAY_CEIL + BLUE_LED_GUARD) - bc_recv_delay) - bc_recv_metric
 
 
 //#define DATACOLLECTION_COMMON_GREEN_START_DELAY  ((MAX_HOPS*CLOCK_SECOND) - bc_recv_delay)
@@ -40,6 +47,9 @@
 //#define GUARD_TIME 1000
 //#define GUARD_TIME 600
 //#define RADIO_TURN_ON_DELAY (EPOCH_DURATION - (RADIO_TURN_OFF_DELAY + DATACOLLECTION_COMMON_GREEN_START_DELAY + GUARD_TIME))
+
+#define GUARD_TIME -50 //cooja
+#define RADIO_TURN_ON_DELAY (EPOCH_DURATION - (RADIO_TURN_OFF_DELAY + DATACOLLECTION_COMMON_GREEN_START_DELAY + (bc_recv_delay+bc_recv_metric))) + GUARD_TIME
 
 /*---------------------------------------------------------------------------*/
 /* Callback function declarations */
