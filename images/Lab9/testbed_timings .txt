@@ -1,0 +1,8 @@
+sched_collect: LEDS GREEN OFF SIGNALLLL !!!!!!
+my_parent: 
+
+
+
+DELAY_CEIL
+
+17:20:46,161  - node 1 send beacon
