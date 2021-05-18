@@ -12,43 +12,34 @@
 /*---------------------------------------------------------------------------*/
 #define RSSI_THRESHOLD -91 // filter bad links
 /*---------------------------------------------------------------------------*/
-
-//#define DELAY_CEIL (CLOCK_SECOND/2)
 #define DELAY_CEIL 350
 #define BEACON_FORWARD_DELAY (random_rand() % DELAY_CEIL)
-
 /*---------------------------------------------------------------------------*/
 #define POSTPROCESSING_DELAY 10
 #define PREPROCESSING_DELAY 16
-//#define MAX_UNICST_PROCESSING_DELAY ((MAX_HOPS-1)*6)
 #define MAX_UNICST_PROCESSING_DELAY ((MAX_HOPS)*6)
 #define COLLECTION_SEQUENCE_DELAY (node_id-2)* MAX_UNICST_PROCESSING_DELAY
-//#define RADIO_TURN_OFF_DELAY (MAX_NODES * MAX_UNICST_PROCESSING_DELAY + 200)
 
-//#define GREEN_LED_GUARD 1000
 #define GREEN_LED_GUARD 200
-#define RADIO_TURN_OFF_DELAY (MAX_NODES * MAX_UNICST_PROCESSING_DELAY +GREEN_LED_GUARD)
+#define RADIO_TURN_OFF_DELAY (MAX_NODES * MAX_UNICST_PROCESSING_DELAY + GREEN_LED_GUARD)
 
+/*
+#ifndef CONTIKI_TARGET_SKY
+#define GUARD_TIME -1300 //testbed
+#else
+#define GUARD_TIME 350 //cooja
+#endif
+#define RADIO_TURN_ON_DELAY (EPOCH_DURATION - ((MAX_HOPS)*DELAY_CEIL)) + GUARD_TIME
+*/
 
-//#define GUARD_TIME -1300 //testbed
-//#define GUARD_TIME 350 //cooja
-//#define RADIO_TURN_ON_DELAY (EPOCH_DURATION - ((MAX_HOPS)*DELAY_CEIL)) + GUARD_TIME
-
-
-
-
-#define BLUE_LED_GUARD 200 // This can be zero as-well => even-though some final beacon packets might disappear (less DC)
-//#define DATACOLLECTION_COMMON_GREEN_START_DELAY  (((MAX_HOPS-1)*CLOCK_SECOND + BLUE_LED_GUARD) - bc_recv_delay)
+#define BLUE_LED_GUARD 200
 #define DATACOLLECTION_COMMON_GREEN_START_DELAY  (((MAX_HOPS-1)*DELAY_CEIL + BLUE_LED_GUARD) - bc_recv_delay) - bc_recv_metric
 
-
-//#define DATACOLLECTION_COMMON_GREEN_START_DELAY  ((MAX_HOPS*CLOCK_SECOND) - bc_recv_delay)
-//#define DATACOLLECTION_COMMON_GREEN_START_DELAY  ((MAX_HOPS*CLOCK_SECOND) - conn->received_packet_from_parent_delay)
-//#define GUARD_TIME 1000
-//#define GUARD_TIME 600
-//#define RADIO_TURN_ON_DELAY (EPOCH_DURATION - (RADIO_TURN_OFF_DELAY + DATACOLLECTION_COMMON_GREEN_START_DELAY + GUARD_TIME))
-
+#ifndef CONTIKI_TARGET_SKY
 #define GUARD_TIME -50 //cooja
+#else
+#define GUARD_TIME 0 // This value needs to be optimised for testbed
+#endif
 #define RADIO_TURN_ON_DELAY (EPOCH_DURATION - (RADIO_TURN_OFF_DELAY + DATACOLLECTION_COMMON_GREEN_START_DELAY + (bc_recv_delay+bc_recv_metric))) + GUARD_TIME
 
 /*---------------------------------------------------------------------------*/
@@ -95,6 +86,24 @@ struct beacon_msg { // Beacon message structure
   clock_time_t delay; // embed the transmission delay to help nodes synchronize
 } __attribute__((packed));
 /*---------------------------------------------------------------------------*/
+
+
+
+
+/*---------------------------------------------------------------------------*/
+/**
+ * \brief         Function to open connections
+ * \param conn    The pointer to connection instance of type sched_collect_conn
+ * \param channels    The channel number to be used for opening broadcast and unicast connections
+ * \param is_sink    The bool to indicate if the caller is sink node or not
+ * \param callbacks    The pointer to  app callback instance of type sched_collect_callbacks
+ * \return     No return value
+ * 
+ *             This function can be called by any node to open its broadcast and unicast connections.
+ *             The sink node will be able to assign external callbacks, which could be invoked on 
+ *             arrival of a unicast packet. Also if its a sink node, periodic beaconing could be 
+ *             inovoked for the EPOCH period (for routing initiation).
+ */
 void
 sched_collect_open(struct sched_collect_conn* conn, uint16_t channels,
   bool is_sink, const struct sched_collect_callbacks *callbacks)
@@ -126,7 +135,20 @@ sched_collect_open(struct sched_collect_conn* conn, uint16_t channels,
     sink_node = linkaddr_node_addr;
   }
 }
+
 /*---------------------------------------------------------------------------*/
+/**
+ * \brief         Function to schedule a unicast sending of packets
+ * \param conn    The pointer to connection instance of type sched_collect_conn
+ * \param data    This pointer to an unsigned 8-bit integer, holds address to data
+ * \param len    The length of the data to be send in bytes
+ * 
+ * \return     Returns 0 if not able to schedule, otherwise sucess
+ * 
+ *             This function can be called by any node (non-sink) to send a unicast data
+ *             to the sink node. If the scheduling buffer of the corresponding node is free
+ *             data will be buffered and send immediately the next feasible EPOCH duration.
+ */
 int
 sched_collect_send(struct sched_collect_conn *conn, uint8_t *data, uint8_t len)
 {
@@ -162,8 +184,21 @@ sched_collect_send(struct sched_collect_conn *conn, uint8_t *data, uint8_t len)
   return 1; 
 }
 
+
 /*---------------------------------------------------------------------------*/
-/* Send beacon using the current seqn and metric */
+/**
+ * \brief         Function to Send beacon using the current seqn and metric
+ * \param conn    The pointer to connection instance of type sched_collect_conn
+ * 
+ * \return     No retun value
+ * 
+ *             This function will be called internally by both sink and non-sink
+ *             nodes to actually send a beacon packet ( broadcast) with current 
+ *             hop-count and sequence number present in the \param conn. The delay
+ *             which was taken in this non-sink node (from recieving the broadcast
+ *             callback till the sending) will be also updated to the accumulated
+ *             delay section of the packet.
+ */
 void
 send_beacon(struct sched_collect_conn* conn)
 {
@@ -195,7 +230,22 @@ send_beacon(struct sched_collect_conn* conn)
   
 }
 
-void beacon_forward_timer_cb (void* ptr)
+/*---------------------------------------------------------------------------*/
+/**
+ * \brief         Callback timer function to re-broadcast a beacon from a non-sink node
+ * \param ptr    The pointer to void, the callback argument
+ * 
+ * \return     No retun value
+ * 
+ *             This function will be called internally by the non-sink node, upon
+ *             successfully recieving a beacon packet inside the broadcast recieve
+ *             callback and decides to re-broadcast the same beacon with updated metrics.
+ *             This timer callback is responsible to call the actual send_beacon() to
+ *             repropogate the beacon.
+ */
+
+void 
+beacon_forward_timer_cb(void* ptr)
 {
   struct sched_collect_conn* conn = (struct sched_collect_conn* ) ptr;
   printf ("Here LEDS BLUE!!\n");
@@ -204,7 +254,21 @@ void beacon_forward_timer_cb (void* ptr)
   ctimer_stop(&conn->beacon_timer);
 }
 
-void turn_radio_on_cb (void *ptr)
+/*---------------------------------------------------------------------------*/
+/**
+ * \brief        Callback timer function to turn-on the node radio
+ * \param ptr    The pointer to void, the callback argument
+ * 
+ * \return     No retun value
+ * 
+ *             This function will be called internally by the non-sink to turn-on,
+ *             the radio node when the radio_timer (in struct sched_collect_conn)
+ *             expires (immediately before each time synchronisation phase). 
+ * 
+ */
+
+void 
+turn_radio_on_cb(void *ptr)
 {
   struct sched_collect_conn* conn = (struct sched_collect_conn* ) ptr;
   NETSTACK_MAC.on ();
@@ -212,8 +276,21 @@ void turn_radio_on_cb (void *ptr)
   ctimer_stop (&conn->radio_timer);
 }
  
+/*---------------------------------------------------------------------------*/
+/**
+ * \brief        Callback timer function to turn-off the node radio
+ * \param ptr    The pointer to void, the callback argument
+ * 
+ * \return     No retun value
+ * 
+ *             This function will be called internally by the non-sink node to
+ *             turn-off the radio,  when the radio_timer (in struct sched_collect_conn)
+ *             expires (immediately after data collection phase). 
+ * 
+ */
 
-void turn_radio_off_cb (void *ptr)
+void
+turn_radio_off_cb(void *ptr)
 {
   struct sched_collect_conn* conn = (struct sched_collect_conn* ) ptr;
   NETSTACK_MAC.off (false);
@@ -223,8 +300,23 @@ void turn_radio_off_cb (void *ptr)
     turn_radio_on_cb, (void*)conn);
 }
 
+/*---------------------------------------------------------------------------*/
+/**
+ * \brief        Callback timer function to actually send the unicast packet
+ *               scheduled from the non-sink node.
+ * \param ptr    The pointer to void, the callback argument
+ * 
+ * \return     No retun value
+ * 
+ *             This function will be called internally by the non-sink node to
+ *             send the unicast packet scheduled,  when the sync_timer (in struct
+ *             sched_collect_conn) expires. This timer is armed inside function 
+ *             datacollection_green_start_cb (). 
+ * 
+ */
 
-void datacollection_send_unicast_cb (void* ptr)
+void 
+datacollection_send_unicast_cb(void* ptr)
 {
   int ret;
 
@@ -258,9 +350,26 @@ void datacollection_send_unicast_cb (void* ptr)
  //   turn_radio_off_cb, (void*)conn);
 }
 
+/*---------------------------------------------------------------------------*/
+/**
+ * \brief        Callback timer function to schedule unicast send and radio turn-off
+ *               of a non-sink node.
+ * \param ptr    The pointer to void, the callback argument
+ * 
+ * \return     No retun value
+ * 
+ *            This function will be called internally by the non-sink node to
+ *            schedule unicast send and radio turn-off,  when the sync_timer 
+ *            (in struct sched_collect_conn) expires. This timer is armed inside
+ *            function bc_recv (). Thus when a non-sink node receives a beacon packet
+ *            which qualifies for re-broadcasting, this timer callback is set.
+ * 
+ */
 
-void datacollection_green_start_cb (void *ptr)
+void 
+datacollection_green_start_cb(void *ptr)
 {
+  printf ("Turning ON COMMON GREEN PART %d\n", node_id);
   struct sched_collect_conn* conn = (struct sched_collect_conn* ) ptr;
   leds_off(LEDS_BLUE);
   ctimer_set(&conn->sync_timer, COLLECTION_SEQUENCE_DELAY,
@@ -270,11 +379,20 @@ void datacollection_green_start_cb (void *ptr)
   ctimer_set(&conn->radio_timer, RADIO_TURN_OFF_DELAY,
     turn_radio_off_cb, (void*)conn);
 
-
-
 }
+
 /*---------------------------------------------------------------------------*/
-/* Beacon timer callback */
+/**
+ * \brief        Callback timer function to send beacon from sink node
+ * \param ptr    The pointer to void, the callback argument
+ * 
+ * \return     No retun value
+ * 
+ *            This function will be called repeatdly by the timer beacon_timer
+ *            (inside struct sched_collect_conn) to send beacons at the beginning
+ *            of each EPOCH (by the sink).
+ */
+
 void
 beacon_timer_cb(void* ptr)
 {
@@ -291,8 +409,26 @@ beacon_timer_cb(void* ptr)
   //ctimer_reset(&conn->beacon_timer);
   ctimer_set(&conn->beacon_timer, EPOCH_DURATION, beacon_timer_cb, (void*)conn);
 }
+
 /*---------------------------------------------------------------------------*/
-/* Beacon receive callback */
+/**
+ * \brief        Broadcast recieve callback (to receive beacons by non-sink node)
+ * \param ptr    The pointer to broadcast_conn instance, which was used to open the broadcast
+ * \param sender Pointer to the sender link address.
+ * 
+ * \return     No retun value
+ * 
+ *            This function will be called upon successful receival of a broadcast packet
+ *            in non-sink node (beacons for time-sync). The main functions of this procedure is:
+ *              1.Analyze the received beacon based on RSSI, seqn, and metric.
+ *              2.Update (if needed) the local/node current routing info (parent, metric).
+ *              3.If the metric or the seqn has been updated, retransmit the beacon to update
+ *                the node neighbors about the changes (by arming beacon_timer)
+ *              4.Arm sync_timer to schedule data collection phase based on accumulated delay
+ *                received in the beacon packet.
+ * 
+ */
+
 void
 bc_recv(struct broadcast_conn *bc_conn, const linkaddr_t *sender)
 {
@@ -408,8 +544,23 @@ bc_recv(struct broadcast_conn *bc_conn, const linkaddr_t *sender)
 
   
 }
+
 /*---------------------------------------------------------------------------*/
-/* Data receive callback */
+/**
+ * \brief          Unicast recieve callback (to receive data send by non-sink nodes)
+ * \param uc_conn  The pointer to unicast_conn instance, which was used to open the unicast
+ * \param from     Pointer to the sender link address.
+ * 
+ * \return     No retun value
+ * 
+ *            This function will be called upon successful receival of a unicast packet
+ *            in nodes (data packets). The main functions of this procedure is:
+ *             1. Extract the header
+ *             2. On the sink, remove the header and call the application callback
+ *             3. On a router, update the header and forward the packet to the parent using unicast
+ * 
+ */
+
 void
 uc_recv(struct unicast_conn *uc_conn, const linkaddr_t *from)
 {
