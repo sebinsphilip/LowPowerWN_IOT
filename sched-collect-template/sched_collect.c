@@ -80,7 +80,7 @@
  * RADIO_TURN_ON_DELAY is the time each non-sink node have to wait
  * (after the RADIO_OFF phase) before turning the radio-on again .
  */
-#ifndef CONTIKI_TARGET_SKY
+#ifdef CONTIKI_TARGET_SKY
 #define GUARD_TIME -50 //cooja
 #else
 #define GUARD_TIME 0 // This value needs to be optimised for testbed
