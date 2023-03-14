@@ -9,5 +9,5 @@ The final report containing detailed analysis and methods used for the implement
 ["CourseProject.pdf"](CourseProject.pdf) file.
 
 The time synchronisation and data collections phase of the implemented lab is shown in the figure below (taken from CourseProject.pdf).
-![alt text](https://github.com/sebinsphilip/LowPowerWN_IOT/blob/master/lwiot.png?raw=true)
+![alt text](https://github.com/sebinsphilip/LowPowerWN_IOT/blob/main/lwiot.png?raw=true)
 
